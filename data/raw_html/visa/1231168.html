@@ -1,0 +1,1652 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>[C-3-1][단기방문] 비자 신청 : 대한민국 국민의 가족 혹은 국내 장기체류외국인의 가족 상세보기|비자  |  주토론토 대한민국 총영사관</title>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes"/>
+<meta name="description" content="토론토 지역 정보, 재외국민 영사서비스, 공관 소식, 기타 생활정보 안내."><!-- 네이버 검색 -->
+<meta name="author" content="주토론토 대한민국 총영사관" />
+<meta property="og:title" content="주토론토 대한민국 총영사관 ">
+<meta property="og:site_name" content="주토론토 대한민국 총영사관 ">
+<meta property="og:description" content="주토론토 대한민국 총영사관 ">
+<meta property="og:url" content="https://overseas.mofa.go.kr/ca-toronto-ko/index.do">
+
+<script type="application/ld+json">
+	{
+		"@context" : "https://schema.org",
+		"@type" : "WebSite",
+		"name" : "주토론토 대한민국 총영사관",
+		"url" : "https://overseas.mofa.go.kr/ca-toronto-ko/index.do"
+	}
+</script>
+
+	<link rel="stylesheet" href="/common-embd/css/default.css?v=2024121101" />
+<link rel="stylesheet" href="/common-embd/css/custom.css" />
+	<link rel="stylesheet" href="/common-embd/css/slick.css" />
+
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+
+<!-- 공통 js -->
+<script type="text/javascript" src="/common-embd/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="/common-embd/js/placeholders.min.js"></script>
+<!-- <script src="../js/prefixfree.min.js"></script> -->
+<script type="text/javascript" src="/common-embd/js/slick.js"></script>
+<script type="text/javascript" src="/common-embd/js/common.js"></script>
+<script type="text/javascript" src="/common-embd/js/top-common.js"></script>
+<!-- //공통 js -->
+
+
+
+			 <!-- // add 2017.09.06 add -->
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+function onDelete(_seq){
+	if(confirm("삭제 하시겠습니까?")){
+		document.mainform.action="./delete.do";
+		document.mainform.submit();
+	}	
+}
+
+//]]>
+
+$(function() {
+	// 이전글 클릭 이벤트
+	$("nav.bo_pagination > a.prev").on("click", function(e) {
+		 
+		location.href = "./view.do?seq=1231171&amp;srchFr=&amp;amp;srchTo=&amp;amp;srchWord=&amp;amp;srchTp=&amp;amp;multi_itm_seq=0&amp;amp;itm_seq_1=0&amp;amp;itm_seq_2=0&amp;amp;company_cd=&amp;amp;company_nm=";
+		
+		return false;
+	});
+	
+	// 다음글 클릭 이벤트
+	$("nav.bo_pagination > a.next").on("click", function(e) {
+		 
+		location.href = "./view.do?seq=1231167&amp;srchFr=&amp;amp;srchTo=&amp;amp;srchWord=&amp;amp;srchTp=&amp;amp;multi_itm_seq=0&amp;amp;itm_seq_1=0&amp;amp;itm_seq_2=0&amp;amp;company_cd=&amp;amp;company_nm=";
+		
+		return false;
+	});
+});
+
+</script>
+
+
+<script type="text/javascript">
+$( function (){
+	selectRelatedEmbdListAjax("ca","ca-toronto-ko");
+
+	//프린트
+	$("#btnPrint").click(function() {$("#print_area").printThis();});
+
+	$("input[name=search_btn]").keydown(function (key) {//통합검색 키가 13이면 실행 (엔터는 13)
+		if(key.keyCode == 13){ $("#search_btn").trigger('click');}
+	});
+	$("#search_btn").click(function() {// respon 통합검색PC
+		$('form[name=wise_sub]').submit();
+	});
+	
+});
+
+//연계공관 selectBox
+function selectRelatedEmbdListAjax(_cntt,_siteid){
+		$.post("/cmmn/selectRelatedEmbdListAjax.do",{cntt : _cntt, siteid : _siteid},setRelatedEmbdList, "json");
+}
+
+//공관선택 selectBox
+function setRelatedEmbdList(data, status){
+	if ( 'success' != status || null == data ) { alert("조회하지 못하였습니다."); return; }
+	$('.top_link > button').eq(0).after("<ul class=\"dep2\"></ul>");
+	$('.top_link > button').eq(1).after("<ul class=\"dep2\"></ul>");
+
+	var obj1 = $('.top_link > button').eq(0).next();
+	var obj2 = $('.top_link > button').eq(1).next();
+
+	for(var i =0; i < data.vo.length; i++){
+		var innerHtml = "<li><a href=\""+data.vo[i].url+"\" target=\"_blank\" title=\"새창\">"+data.vo[i].itmNm+"</a></li>";
+
+		
+		obj1.append(innerHtml);
+		obj2.append(innerHtml);
+	}
+}
+</script>
+</head>
+<body id="subpage"><!-- 서브페이지에는 id="subpage" 추가 -->
+<div id="wrapper" class="ko">
+	<!-- 스킵내비게이션 -->
+	<div class="skip_navi" id="skiptoContent">
+		<strong class="hide">바로가기 메뉴</strong>
+		<a href="#contents">본문 바로가기</a>
+		<a href="#gnb">주메뉴 바로가기</a>
+	</div>
+	<!--//스킵내비게이션 -->
+	<!-- 헤더 -->
+	<div class="header">
+<div id="masthead" class="gov-info">
+<div class="toggle-wrap container">
+<div class="toggle-head">
+<div class="inner">
+<span class="nuri-txt">이 누리집은 대한민국 공식 전자정부 누리집입니다.</span>
+</div>
+</div>
+</div>
+</div>
+		<div class="util container">
+			<ul>
+				<li>
+					<a href="http://www.mofa.go.kr/www/index.do" target="_blank" title="새창">
+						<img src="/common-embd/images/common/icon_topmenu_1.png" alt="">
+						<span>외교부</span>
+					</a>
+				</li>
+				<li><a href="http://www.president.go.kr/" target="_blank" title="새창"><img src="/common-embd/images/common/Presidential_Office_CI-black.png" alt=""><span>청와대</span></a></li>
+				<li><a href="/ca-toronto-ko/wpge/m_24147/contents.do" target="_blank" title="새창"><img src="/common-embd/images/common/icon_topmenu_6.png" alt="">
+					<span>RSS</span></a>
+				</li>
+			</ul>
+			<ol class="acodian2">
+				<li class="top_link">
+					<button type="button">
+						<img src="/common-embd/images/common/icon_topmenu_3.png" alt="">
+						<span>캐나다 내 공관</span>
+				</li>
+				<li class="top_sns">
+					<button type="button">
+						<img src="/common-embd/images/common/icon_topmenu_4.png" alt="">
+						<span>공관 소셜미디어</span>
+					</button>
+					<ul>
+						<li><a href="https://twitter.com/MofaToronto" target="_blank" title="새창에서 열림" class="twitter">X</a></li>
+						<li><a href="https://www.facebook.com/KoreanConsulate" target="_blank" title="새창에서 열림" class="facebook">facebook</a></li>
+						<li><a href="https://www.instagram.com/mofatoronto" target="_blank" title="새창에서 열림" class="insta">instagram</a></li>
+						<li><a href="https://www.youtube.com/channel/UCS2ooTpoco6vbkfjGfWl7wQ" target="_blank" title="새창에서 열림" class="youtube">youtube</a></li>
+					</ul>
+				</li>
+				<li class="lang">
+					<button type="button">
+						<img src="/common-embd/images/common/icon_topmenu_5.png" alt="">
+						<span>KOREAN</span>
+					</button>
+					<ul>
+						<li><a href="#">KOREAN</a></li>
+						<li><a href="/ca-toronto-en/index.do">English</a></li>
+					</ul>
+				</li>
+			</ol>
+		</div>
+		<div class="logo_wrap">
+			<h1 class="logo"><a href="/ca-toronto-ko/index.do"><span>주토론토 대한민국 총영사관</span></a></h1>
+			<button type="button" class="modal_open">팝업<span id="openCnt"></span></button>
+		</div>
+		<div id="gnb">
+			<div class="container">
+				<ol class="lang">
+					<li><a href="#">KOREAN</a></li>
+					<li><a href="/ca-toronto-en/index.do">English</a></li>
+				</ol>
+				<ul class="dep1">
+					
+					<li>
+						<a href="/ca-toronto-ko/wpge/m_5384/contents.do">공관소개</a>
+
+					
+						<ul class="dep2">
+							<li><a href="/ca-toronto-ko/wpge/m_5384/contents.do" >총영사 인사말</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/wpge/m_5386/contents.do" >총영사관 연혁</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/wpge/m_5385/contents.do" >주소 및 연락처</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/wpge/m_20270/contents.do" >근무시간 및 휴무일</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/wpge/m_5387/contents.do" >업무별 연락처</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5399/list.do" >공관 활동</a>
+							
+							</li>
+							</ul>
+						
+						</li>
+					
+					<li>
+						<a href="/ca-toronto-ko/brd/m_24644/list.do">영사 서비스</a>
+
+					
+						<ul class="dep2">
+							<li><a href="/ca-toronto-ko/brd/m_24644/list.do" >자주묻는질문(FAQ)</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5389/list.do" >여권</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5390/list.do" >비자</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5391/list.do" >공증</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5392/list.do" >병역</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5393/list.do" >가족관계등록</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5394/list.do" >국적</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_27012/list.do" >공동/금융 인증서</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_21301/list.do" >각종 증명서 발급</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5395/list.do" >재외국민등록</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_24767/list.do" >해외 이주 신고</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_24645/list.do" >순회영사</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5396/list.do" >양식 다운로드</a>
+							
+							</li>
+							</ul>
+						
+						</li>
+					
+					<li>
+						<a href="/ca-toronto-ko/brd/m_5397/list.do">뉴스</a>
+
+					
+						<ul class="dep2">
+							<li><a href="/ca-toronto-ko/brd/m_5397/list.do" >공지사항</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_21240/list.do" >문화 포커스</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_25433/list.do" >캐나다한국교육원</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5398/list.do" >한인단체 소식창</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_28930/list.do" >수출수주 알리미</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5405/list.do" >정치·경제·통상</a>
+							
+							</li>
+							</ul>
+						
+						</li>
+					
+					<li>
+						<a href="/ca-toronto-ko/brd/m_27271/list.do">정보마당</a>
+
+					
+						<ul class="dep2">
+							<li><a href="/ca-toronto-ko/brd/m_27271/list.do" >해외여행안전정보</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/wpge/m_28581/contents.do" >캐나다 및 관할지역 정보</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/wpge/m_28582/contents.do" >도착 전 준비사항</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/wpge/m_28583/contents.do" >현지 여행 정보</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/wpge/m_28584/contents.do" >현지 생활 정보</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5420/list.do" >워킹홀리데이</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5422/list.do" >동포단체 소개</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5404/list.do" >지상사·무역단체 소개</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/wpge/m_28585/contents.do" >공공기관 홈페이지</a>
+							
+								<ul class="dep3">
+									<li><a href="https://www.kotra.or.kr/subList/20000005998/ovrssKbc/selectOvrssKbcDetail.do?deptCd=9312"  target="_blank" title="새창열림">토론토무역관(KOTRA)</a></li>
+								
+							
+								
+									<li><a href="http://english.visitkorea.or.kr/enu/KOO/KOO_EN_10_2.jsp"  target="_blank" title="새창열림">한국관광공사 토론토지사</a></li>
+								
+							
+								
+									<li><a href="https://www.komir.or.kr/kor/contents/27"  target="_blank" title="새창열림">한국광해광업공단 캐나다사무소</a></li>
+								
+							
+								
+									<li><a href="https://www.cakec.com/"  target="_blank" title="새창열림">캐나다 한국 교육원</a></li>
+								
+									</ul>
+								
+							
+							</li>
+							</ul>
+						
+						</li>
+					
+					<li>
+						<a href="/ca-toronto-ko/wpge/m_5415/contents.do">전자민원</a>
+
+					
+						<ul class="dep2">
+							<li><a href="/ca-toronto-ko/wpge/m_5415/contents.do" >질의/응답 답변안내</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="https://consul.mofa.go.kr/cipl/0100/login.do?authFailed=N"  target="_blank" title="새창열림">재외동포 365민원포털</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="https://www.mofa.go.kr/www/brd/m_4112/list.do"  target="_blank" title="새창열림">칭찬합시다</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_28929/list.do" >기업지원헬프데스크</a>
+							
+							</li>
+							</ul>
+						
+						</li>
+					
+				</ul>
+				<div class="search_box">
+					<button type="button" class="btn_search"><span class="hide">검색창 열기</span></button>
+					<form name="wise_sub" action="https://search.mofa.go.kr/search/search_embd_ko.do" target="_blank" method="post">
+						<fieldset>
+							<legend>검색 입력 폼</legend>
+							<div class="search">
+								<input type="text" name="query" value="" id="searchKeyWord" title="검색어를 입력해주세요.">
+								<button type="button" id="search_btn"><span class="hide">검색</span></button>
+								<input type="hidden" name="siteId" value="ca-toronto-ko">
+									<input type="hidden" name="siteNm" value="주토론토 대한민국 총영사관">
+                </div>
+						</fieldset>
+					</form>
+				</div>
+				<button type="button" class="btn_sitemap_open"><span class="hide">사이트맵 열기</span></button>
+			</div>
+		</div>
+
+		<div class="sitemap">
+			<div class="container">
+				<ol class="link">
+					<li><a href="http://www.mofa.go.kr/www/index.do" target="_blank" title="새창"><img src="/common-embd/images/common/icon_sitemap_1.png" alt="">
+							<span>외교부</span></a>
+					</li>
+					<li><a href="http://www.president.go.kr/" target="_blank" title="새창"><img src="/common-embd/images/common/Presidential_Office_CI-white.png" alt="">
+						<span>청와대</span></a>
+					</li>
+				</ol>
+				<ul class="dep1" style="display:none;">
+					
+					<li>
+						<a href="/ca-toronto-ko/wpge/m_5384/contents.do">공관소개</a>
+
+					
+						<ul class="dep2">
+							<li><a href="/ca-toronto-ko/wpge/m_5384/contents.do" >총영사 인사말</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/wpge/m_5386/contents.do" >총영사관 연혁</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/wpge/m_5385/contents.do" >주소 및 연락처</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/wpge/m_20270/contents.do" >근무시간 및 휴무일</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/wpge/m_5387/contents.do" >업무별 연락처</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5399/list.do" >공관 활동</a>
+							
+							</li>
+							</ul>
+						
+						</li>
+					
+					<li>
+						<a href="/ca-toronto-ko/brd/m_24644/list.do">영사 서비스</a>
+
+					
+						<ul class="dep2">
+							<li><a href="/ca-toronto-ko/brd/m_24644/list.do" >자주묻는질문(FAQ)</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5389/list.do" >여권</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5390/list.do" >비자</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5391/list.do" >공증</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5392/list.do" >병역</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5393/list.do" >가족관계등록</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5394/list.do" >국적</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_27012/list.do" >공동/금융 인증서</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_21301/list.do" >각종 증명서 발급</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5395/list.do" >재외국민등록</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_24767/list.do" >해외 이주 신고</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_24645/list.do" >순회영사</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5396/list.do" >양식 다운로드</a>
+							
+							</li>
+							</ul>
+						
+						</li>
+					
+					<li>
+						<a href="/ca-toronto-ko/brd/m_5397/list.do">뉴스</a>
+
+					
+						<ul class="dep2">
+							<li><a href="/ca-toronto-ko/brd/m_5397/list.do" >공지사항</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_21240/list.do" >문화 포커스</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_25433/list.do" >캐나다한국교육원</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5398/list.do" >한인단체 소식창</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_28930/list.do" >수출수주 알리미</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5405/list.do" >정치·경제·통상</a>
+							
+							</li>
+							</ul>
+						
+						</li>
+					
+					<li>
+						<a href="/ca-toronto-ko/brd/m_27271/list.do">정보마당</a>
+
+					
+						<ul class="dep2">
+							<li><a href="/ca-toronto-ko/brd/m_27271/list.do" >해외여행안전정보</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/wpge/m_28581/contents.do" >캐나다 및 관할지역 정보</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/wpge/m_28582/contents.do" >도착 전 준비사항</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/wpge/m_28583/contents.do" >현지 여행 정보</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/wpge/m_28584/contents.do" >현지 생활 정보</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5420/list.do" >워킹홀리데이</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5422/list.do" >동포단체 소개</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5404/list.do" >지상사·무역단체 소개</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/wpge/m_28585/contents.do" >공공기관 홈페이지</a>
+							
+								<ol class="dep3">
+									<li><a href="https://www.kotra.or.kr/subList/20000005998/ovrssKbc/selectOvrssKbcDetail.do?deptCd=9312"  target="_blank" title="새창열림">토론토무역관(KOTRA)</a></li>
+								
+							
+								
+									<li><a href="http://english.visitkorea.or.kr/enu/KOO/KOO_EN_10_2.jsp"  target="_blank" title="새창열림">한국관광공사 토론토지사</a></li>
+								
+							
+								
+									<li><a href="https://www.komir.or.kr/kor/contents/27"  target="_blank" title="새창열림">한국광해광업공단 캐나다사무소</a></li>
+								
+							
+								
+									<li><a href="https://www.cakec.com/"  target="_blank" title="새창열림">캐나다 한국 교육원</a></li>
+								
+									</ol>
+								
+							
+							</li>
+							</ul>
+						
+						</li>
+					
+					<li>
+						<a href="/ca-toronto-ko/wpge/m_5415/contents.do">전자민원</a>
+
+					
+						<ul class="dep2">
+							<li><a href="/ca-toronto-ko/wpge/m_5415/contents.do" >질의/응답 답변안내</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="https://consul.mofa.go.kr/cipl/0100/login.do?authFailed=N"  target="_blank" title="새창열림">재외동포 365민원포털</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="https://www.mofa.go.kr/www/brd/m_4112/list.do"  target="_blank" title="새창열림">칭찬합시다</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_28929/list.do" >기업지원헬프데스크</a>
+							
+							</li>
+							</ul>
+						
+						</li>
+					
+					<li class="top_link">
+						<button type="button">
+						<img src="/common-embd/images/common/icon_topmenu_3.png" alt="">
+						<span>캐나다 내 공관</span>
+					</li>
+				</ul>
+				<!-- gnb clone -->
+				<div class="sns">
+					<span>공관 소셜미디어</span>
+					<ul>
+						<li><a href="https://twitter.com/MofaToronto" target="_blank" title="새창"><img src="/common-embd/images/common/icon_twitter.png" alt="트위터"></a></li>
+						<li><a href="https://www.facebook.com/KoreanConsulate" target="_blank" title="새창"><img src="/common-embd/images/common/icon_facebook.png" alt="페이스북"></a></li>
+						<li><a href="https://www.instagram.com/mofatoronto" target="_blank" title="새창" ><img src="/common-embd/images/common/icon_insta.png" alt="instagram"></a></li>
+						<li><a href="https://www.youtube.com/channel/UCS2ooTpoco6vbkfjGfWl7wQ" target="_blank" title="새창" ><img src="/common-embd/images/common/icon_youtube.png" alt="youtube"></a></li>
+					</ul>
+
+				</div>
+				<button type="button" class="btn_sitemap_close"><span class="hide">사이트맵 닫기</span></button>
+			</div>
+		</div>
+	</div>
+	<!-- //헤더 -->
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+$('#kakaotalk').on("click", function(){
+	alert("onClick");
+});
+//-->
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 컨테이너 -->
+
+<div class="sub">
+  <div class="container">
+    <!-- 로컬내비게이션 -->
+    <div class="lnb">
+    	
+      <strong><span>영사 서비스</span></strong>
+      <ul>
+      	
+      	
+      	
+        	<li  >
+        		<a href="/ca-toronto-ko/brd/m_24644/list.do" >
+        			자주묻는질문(FAQ)
+        		</a>
+        		
+         	
+		 		
+        </li>
+				
+        	<li  >
+        		<a href="/ca-toronto-ko/brd/m_5389/list.do" >
+        			여권
+        		</a>
+        		
+         	
+		 		
+        </li>
+				
+        	<li  class="selected" >
+        		<a href="/ca-toronto-ko/brd/m_5390/list.do" >
+        			비자
+        		</a>
+        		
+         	
+		 		
+        </li>
+				
+        	<li  >
+        		<a href="/ca-toronto-ko/brd/m_5391/list.do" >
+        			공증
+        		</a>
+        		
+         	
+		 		
+        </li>
+				
+        	<li  >
+        		<a href="/ca-toronto-ko/brd/m_5392/list.do" >
+        			병역
+        		</a>
+        		
+         	
+		 		
+        </li>
+				
+        	<li  >
+        		<a href="/ca-toronto-ko/brd/m_5393/list.do" >
+        			가족관계등록
+        		</a>
+        		
+         	
+		 		
+        </li>
+				
+        	<li  >
+        		<a href="/ca-toronto-ko/brd/m_5394/list.do" >
+        			국적
+        		</a>
+        		
+         	
+		 		
+        </li>
+				
+        	<li  >
+        		<a href="/ca-toronto-ko/brd/m_27012/list.do" >
+        			공동/금융 인증서
+        		</a>
+        		
+         	
+		 		
+        </li>
+				
+        	<li  >
+        		<a href="/ca-toronto-ko/brd/m_21301/list.do" >
+        			각종 증명서 발급
+        		</a>
+        		
+         	
+		 		
+        </li>
+				
+        	<li  >
+        		<a href="/ca-toronto-ko/brd/m_5395/list.do" >
+        			재외국민등록
+        		</a>
+        		
+         	
+		 		
+        </li>
+				
+        	<li  >
+        		<a href="/ca-toronto-ko/brd/m_24767/list.do" >
+        			해외 이주 신고
+        		</a>
+        		
+         	
+		 		
+        </li>
+				
+        	<li  >
+        		<a href="/ca-toronto-ko/brd/m_24645/list.do" >
+        			순회영사
+        		</a>
+        		
+         	
+		 		
+        </li>
+				
+        	<li  >
+        		<a href="/ca-toronto-ko/brd/m_5396/list.do" >
+        			양식 다운로드
+        		</a>
+        		
+         	
+		 		
+        </li>
+				
+			</ul>
+		  <!-- 서브 탑영역 -->
+		  <div class="page_tit">
+		    <div>
+		      <h2>비자</h2>
+		      <ol>
+		        <li><a href="/ca-toronto-ko/index.do" title="홈으로 이동"><img src="/common-embd/images/common/icon_bc_home.png" alt=""></a></li>
+		        
+		        	 <li>영사 서비스</li>
+		         
+		        
+		        	
+		         <li>비자</li>
+		        
+		      </ol>
+		    </div>
+		    <ul>
+	    
+		    
+					
+			      <li class="fs_btn">
+			         <strong>글자크기</strong>
+			         <button type="button" class="fs_up"><span class="hide">글자확대</span></button>
+			         <button type="button" class="fs_down"><span class="hide">글자축소</span></button>
+			       </li>
+					
+					
+	     	
+	    
+		      <li class="share"><button type="button" title="sns목록 닫힘"><span class="hide">SNS 공유</span></button>
+		        <div>
+		          <a href="#facebook" onclick="sendSns('facebook','http://toronto.mofa.go.kr/ca-toronto-ko/brd/m_5390/list.do','[C-3-1][단기방문] 비자 신청 : 대한민국 국민의 가족 혹은 국내 장기체류외국인의 가족 상세보기|비자 | 주토론토 대한민국 총영사관');return false;" target="_blank" title="페이스북"><img src="/common-embd/images/common/icon_sub_facebook.png" alt=""></a>
+		          <a href="#twitter" onclick="sendSns('twitter','http://toronto.mofa.go.kr/ca-toronto-ko/brd/m_5390/list.do','[C-3-1][단기방문] 비자 신청 : 대한민국 국민의 가족 혹은 국내 장기체류외국인의 가족 상세보기|비자 | 주토론토 대한민국 총영사관');return false;" target="_blank" title="X(트위터)"><img src="/common-embd/images/common/icon_sub_twitter.png" alt=""></a>
+		          <!-- <a href="javascript:;" id ="kakaotalk"  target="_blank" title="카카오톡" class="only_mobile"><img src="/common-embd/images/common/icon_sub_kakao.png" alt=""></a> -->
+		          <a href="#" id="kakaotalk" >
+	            	<img src="/common-embd/images/common/icon_sub_kakao.png" alt="현재 페이지 카카오톡 공유하기">
+	            </a>
+		          <a href="#band" onclick="sendSns('band','http://toronto.mofa.go.kr/ca-toronto-ko/brd/m_5390/list.do','[C-3-1][단기방문] 비자 신청 : 대한민국 국민의 가족 혹은 국내 장기체류외국인의 가족 상세보기|비자 | 주토론토 대한민국 총영사관');return false;" target="_blank" title="네이버 밴드" class="only_mobile"><img src="/common-embd/images/common/icon_sub_band.png" alt=""></a>
+		        </div>
+		      </li>
+		      <li class="print">
+		           <button type="button" onclick="contentPrint();"><span class="hide">인쇄하기</span></button>
+		      </li>
+		    </ul>
+		  </div>
+					 	<!-- depth-4 탭 버튼 -->
+				    
+							
+				     
+							
+				     
+							
+								
+				     	
+				     
+							
+				     
+							
+				     
+							
+				     
+							
+				     
+							
+				     
+							
+				     
+							
+				     
+							
+				     
+							
+				     
+							
+				     
+				     <!-- //depth-4 탭 버튼 -->
+		  
+		  
+		  <!-- //서브 탑영역 -->
+		</div>
+	<!-- //로컬내비게이션 -->
+
+	<div id="contents">
+		
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+function f_down(url){
+	$("#ajax_loading_bg").show();
+ 	
+	$('#_h_blank').attr('src',url);
+ 	
+ 	$('#_h_blank').ready(function(){
+ 		$("#ajax_loading_bg").hide();
+ 	});
+ 	
+}
+
+function fnSearchTag(val){//통합검색
+	  $("form[name=wise_sub] input[name=query]").val(val);
+	  $("form[name=wise_sub]").submit();
+	}
+//]]>
+//<![CDATA[
+  var today = new Date(); // 오늘 날짜    
+  var month = ""+today.getFullYear();
+  
+	if((today.getMonth()+1) < 10)
+		month += "0"+ (today.getMonth()+1);
+  else
+  	month += ""+ (today.getMonth()+1);
+         
+  function goView(brd_id,seq,data_tp,file_seq){
+		$.post("/*/brd/docviewer.do",{brd_id:brd_id, seq:seq, data_tp:data_tp, file_seq:file_seq}
+		,function(result){
+			if(result.outputValue == 0){
+				window.open("/viewer/skin/doc.html?fn="+result.filename+"&rs=/viewer/result/"+month,'_blank');
+				console.log(result);
+				win.focus();
+			}else {
+				console.log(result);
+				alert("문서파일 변환을 실패했습니다.");
+			}
+		});
+	}
+//]]>
+</script>
+<style type="text/css">
+.file_down>a {
+		margin-bottom: 5px
+	}
+.ajax_hide {display:none;}
+#ajax_loading_bg {position:fixed; overflow:hidden; top:0; left:0; height:100%; width:100%; background:#000000; opacity:0.7; /* IE 8 */ -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"; /* IE 5-7 */ filter:alpha(opacity=70); /* Netscape */ -moz-opacity:0.7; /* Safari 1.x */ -khtml-opacity:0.7; z-index:1000000001;}
+#ajax_loading_center {width:100px; height:100px; position:absolute; left:50%; top:50%;  margin-left:-50px; margin-top:-50px; z-index:1000000002;}
+</style>
+<div class="board_detail">
+	<div class="bo_head">
+		<h2>
+			
+			[C-3-1][단기방문] 비자 신청 : 대한민국 국민의 가족 혹은 국내 장기체류외국인의 가족
+		</h2>
+		<dl>
+			
+				<dt>작성자</dt>
+				<dd>주 토론토(총)</dd>
+				<dt scope="row">작성일</dt>
+				<dd>2021-09-17</dd><!-- 작성일 -->
+				<!--  게시글 수정일 추가 -->
+				 
+				<dt scope="row">수정일</dt>
+				<dd>2026-01-03</dd>
+				
+			
+		</dl>
+	</div>
+	
+	<div class="bo_file">
+		<strong>첨부</strong>
+			<ul>
+				
+				<li>
+					<a href="javascript:f_down('./down.do?brd_id=14363&amp;seq=1231168&amp;data_tp=A&amp;file_seq=4');">
+					
+						
+						<img src="/common-embd/images/common/icon_file_pdf.png" alt="[개정] 사증발급신청서 서식(출입국관리법 시행규칙 별지 제17호) VISA APPLICATION (updated Dec 2020).pdf 파일다운로드"/>
+						
+						
+					
+						<span>[개정] 사증발급신청서 서식(출입국관리법 시행규칙 별지 제17호) VISA APPLICATION (updated Dec 2020).pdf</span>
+					</a>
+					
+					<button type="button" onclick="goView('14363','1231168','A','4');" title="새창열림">미리보기</button>
+					
+				</li>
+				
+			</ul>
+	</div>	
+	
+	<div class="bo_con">
+		<div class="se-contents" role="textbox" style="box-sizing: content-box; font-family: &quot;Open sans&quot;, &quot;Noto sans&quot;, &quot;sans-serif&quot;, &quot;맑은 고딕&quot;; font-size: 12pt; line-height: 1.4; letter-spacing: -0.08px;" data-document-padding-top="18" data-document-padding-bottom="18" data-document-padding-left="23" data-document-padding-right="23"><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><a style="text-decoration: underline; color: rgb(22, 63, 199);" data-href="http://overseas.mofa.go.kr/ca-toronto-ko/brd/m_5390/view.do?seq=1231164&amp;srchFr=&amp;srchTo=&amp;srchWord=&amp;srchTp=&amp;multi_itm_seq=0&amp;itm_seq_1=0&amp;itm_seq_2=0&amp;company_cd=&amp;company_nm=&amp;page=1" data-hyperlink-id="se_c5ce6713-571b-4f4e-981b-b97704657a90" target="_blank" href="http://overseas.mofa.go.kr/ca-toronto-ko/brd/m_5390/view.do?seq=1231164&amp;srchFr=&amp;srchTo=&amp;srchWord=&amp;srchTp=&amp;multi_itm_seq=0&amp;itm_seq_1=0&amp;itm_seq_2=0&amp;company_cd=&amp;company_nm=&amp;page=1"><span style="font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-skip-ink: none; font-weight: bold; text-decoration: underline;">[ 사증면제협정 및 무사증입국 잠정 정지에 따른 비자 신청 안내 ]</span></a><span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: bold;">&nbsp;</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">☜ 반드시&nbsp;</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: bold;">클릭</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">&nbsp;하여 내용을 확인 하시고 비자 신청을 준비 해 주시기 바랍니다</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><br/></p><p style="text-align: justify; line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><a style="text-decoration: underline; color: rgb(22, 63, 199);" data-href="http://overseas.mofa.go.kr/ca-toronto-ko/brd/m_5390/view.do?seq=1231185&amp;srchFr=&amp;srchTo=&amp;srchWord=&amp;srchTp=&amp;multi_itm_seq=0&amp;itm_seq_1=0&amp;itm_seq_2=0&amp;company_cd=&amp;company_nm=&amp;page=1" data-hyperlink-id="se_4a88b1f7-90db-45f5-a325-df6271a98a47" target="_blank" href="http://overseas.mofa.go.kr/ca-toronto-ko/brd/m_5390/view.do?seq=1231185&amp;srchFr=&amp;srchTo=&amp;srchWord=&amp;srchTp=&amp;multi_itm_seq=0&amp;itm_seq_1=0&amp;itm_seq_2=0&amp;company_cd=&amp;company_nm=&amp;page=1"><span style="font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-skip-ink: none; font-weight: bold; text-decoration: underline;">* 필독 * 대한민국 방문 비자 신청 하는 방법 상세 안내 (외국인이 대한민국 입국을 원하신다면 이 게시글을 가장 먼저 읽으시기 바랍니다)</span></a><span style="font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-skip-ink: none; font-weight: bold; text-decoration: underline;">&nbsp;</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">☜ 반드시&nbsp;</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: bold;">클릭</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">&nbsp;하여 확인 하시고 &nbsp;비자 신청을 준비 해 주시기 바랍니다</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><br/></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><a style="text-decoration: underline; color: rgb(22, 63, 199);" data-href="http://overseas.mofa.go.kr/ca-toronto-ko/brd/m_5390/view.do?seq=1231160&amp;srchFr=&amp;srchTo=&amp;srchWord=&amp;srchTp=&amp;multi_itm_seq=0&amp;itm_seq_1=0&amp;itm_seq_2=0&amp;company_cd=&amp;company_nm=&amp;page=1" data-hyperlink-id="se_5978a71b-da77-40fd-9f7a-27ed38fd4938" target="_blank" href="http://overseas.mofa.go.kr/ca-toronto-ko/brd/m_5390/view.do?seq=1231160&amp;srchFr=&amp;srchTo=&amp;srchWord=&amp;srchTp=&amp;multi_itm_seq=0&amp;itm_seq_1=0&amp;itm_seq_2=0&amp;company_cd=&amp;company_nm=&amp;page=1"><span style="font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-skip-ink: none; font-weight: bold; text-decoration: underline;">[ 비자 신청 관련 추가 안내 ]</span></a><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">&nbsp;☜ 아래의 모든 정보를 읽고도 &nbsp;추가 문의 사항이 있으시다면 반드시&nbsp;</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: bold;">클릭</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">&nbsp;하여 확인 하시고 준비 해 주시기 바랍니다.</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><br/></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-weight: bold;">※접수 후 제출한 서류 및 수수료는 반환 불가합니다.</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: bold;" class="se-zws-run"><br/></span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-weight: bold;">장례식 참석 목적으로 긴급히 입국하셔야 하는 경우 구비서류를 완비 하시고 비자과로 전화 문의(416-920-3809 ext. 221) 문의 주시면 접수 가능 시간을 지정하여 안내 해 드립니다.</span><span>&nbsp;바로 연결이 안될경우 음성메세지를 남겨 주시기 바랍니다. (국적상실신고가 안 되신 경우 국적상실신고를 하셔야 비자신청이 가능합니다. 국적상실 신고를 안하신 경우 국적상실신고 구비서류도 완비 해 주시기 바랍니다.)&nbsp;</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><br/></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px; margin-left: 40px;" dir="ltr"><span>이외의 경우, 민원업무가 모두 예약제로 운영되기에 유선상으로 예약이 불가능합니다. 양해 부탁드립니다.</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><br/></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px; margin-left: 0px;" dir="ltr"><span style="font-weight: bold;">가족이 편찮으시더라도 국적상실 신고가 되어있지 않은 민원은 비자신청이 불가능합니다. 국적상실신고를 누락하신 경우, 먼저 국적상실 구비서류를 준비하시고 국적과에 예약 하여 국적상실신고를 마치신 후 비자신청 예약을 온라인으로 하시기 바랍니다.&nbsp;</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px; margin-left: 40px;" dir="ltr"><span style="color: rgb(0, 0, 0);" class="se-zws-run"><br/></span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px; margin-left: 40px;" dir="ltr"><span>유의: 같은날 국적상실신고와 비자신청 예약이 원칙적으로 가능하나 이는 본인이 국적과 예약과 비자과 예약을 온라인으로 같은날로 잡으셔야 가능합니다.</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><br/><br/></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: bold;">[ 국민의 가족 혹은 국내 장기체류외국인의 가족 단기방문(C-3-1)비자 안내 ]</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><br/></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: bold;">체류 기간: 최대 90일</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: bold;">유효기간: 발급일로부터 3개월&nbsp;</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: bold;">사용 횟수: 1회 (단수비자)</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-weight: bold;">비자 발급 소요 기간: 12～15 Business Days&nbsp;</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;" class="se-zws-run"><br/></span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span id="docs-internal-guid-c335c586-7fff-c3b5-ca5a-e1b49a7a648b" style="font-variant-numeric: normal; font-variant-east-asian: normal;">주의: 사증 유효기간은 비자&nbsp;</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-skip-ink: none; text-decoration: underline;">발급일</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">로부터 최대 3개월입니다. (유효기간 이내에 한국에 입국하지 않으면 비자가 완전 무효화 됩니다.)&nbsp;</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-skip-ink: none; text-decoration: underline;">입국일</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">로부터 허가받은&nbsp;</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-skip-ink: none; text-decoration: underline;">체류기간</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">&nbsp;동안 한국에 체류 가능합니다.&nbsp;</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><br/></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span id="docs-internal-guid-35393428-7fff-1f96-a896-1f69fb47fa3c" style="font-variant-numeric: normal; font-variant-east-asian: normal;">이 비자는 한국에서 취업을 비롯한 기타 영리활동, 학업 등이 불가능합니다.&nbsp;</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">또한 출입국관리법 시행규칙 제9조제1항에 따라 C 계열 사증소지자는 입국 후에 체류자격을 변경 할 수 없습니다. C 계열 비자로 입국하여 재외동포 혹은 결혼이민 등 다른 비자로 전환이 불가능합니다.</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;" class="se-zws-run"><br/></span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><a style="text-decoration: underline; color: rgb(22, 63, 199);" data-href="http://www.immigration.go.kr/immigration/index.do" data-hyperlink-id="se_f9169c8d-b678-4827-bb95-8f083a0a7abc" target="_blank" href="http://www.immigration.go.kr/immigration/index.do"><span style="font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-skip-ink: none; text-decoration: underline;">출입국외국인정책본부 홈페이지</span></a><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">&nbsp;</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">☜ 클릭 / 외국인종합안내센터 : 011-82-1345</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><br/><br/></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-weight: bold;">[ 국민의 가족 혹은 국내 장기체류외국인의 가족 단기방문(C-3-1)비자 신청 자격 ]</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><br/></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span>1. 대한민국 국민의 배우자,&nbsp;</span><span>대한민국 국민의 자녀(성년, 미성년 자녀 모두 포함)</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span>2. 대한민국 국민 또는 대한민국 국민의 배우자의 부모가 대한민국 국민 또는 대한민국 국민의 배우자의&nbsp;</span><span style="text-decoration: underline;">임신&nbsp;</span><span style="text-decoration: underline;">· 출산&nbsp;</span><span style="text-decoration: underline;">· 만 7세 미만 자녀의 양육 지원 입국 목적으로 한정</span><span>&nbsp;</span><span>* 2021.4.21 업데이트</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span>2. 국내 장기체류외국인의 가족(범위: 배우자, 미성년 자녀)</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><br/></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">우리국민 및 외국인 등 모든 해외입국자는 4.1일부터 한국 입국시 14일 격리를 하셔야 합니다.&nbsp;</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">이 비자 소지자는 직계가족의 장례식 참석자를 제외하고 격리면제대상이 아닙니다. 이점을 감안하시어 일정을 계획하시기 바랍니다.</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><br/></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">이미 유효한 재외동포비자(거소증)을 소지 하신 분인 경우 출입국외국인정책본부에 문의 하시어 유효한지 확인을 받으시고 재외동포 비자로 입국 하시기 바랍니다.</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><br/></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><br/></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-weight: bold;">[&nbsp;</span><span style="font-weight: bold;">단기방문(C-3-1)비자 구비서류 체크리스트 ]</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span>1. 사증발급 신청서 1부</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">2. 여권 원본</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">3. 여권 복사본 1부 &nbsp; &nbsp; &nbsp;</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">4. (캐나다 국적자가 아닌 경우) 영주권 또는 기타 캐나다 체류사증 원본 및 CLEAR 한 복사본 1부 &nbsp; &nbsp; &nbsp; &nbsp;</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">5. 증명사진 1매(6개월 이내 촬영) &nbsp; &nbsp; &nbsp; &nbsp;</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">6. (대한민국 국적자의 가족)한국에 있는 가족과의 관계증명서 및 신분증 사본(아래 세부사항 안내 참고)</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">7. (한국 장기체류외국인의 가족)한국에 있는 가족과의 관계증명서 및 신분증, 거소증/외국인등록증 사본(아래 세부사항 안내 참고)</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">8. 신청자가 재외동포인 경우 추가 구비서류(기본증명서/가족관계증명서 또는 제적등본)</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">8-1.&nbsp;서류에 국적상실이 표기가 안되어있다면 시민권증서 원본, 사본과&nbsp;</span><span>국적상실 접수증 추가 제출</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span>9. CAD $54&nbsp;</span><span>(</span><span>현금, Debit카드, 신용카드 결제 가능)</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-size: 14.7px; white-space: pre-wrap;" class="se-zws-run"><br/></span></p><p style="line-height: 1.8; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><br/></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: bold;">[&nbsp;</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: bold;">국민의 가족 혹은 국내 장기체류외국인의 가족&nbsp;</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: bold;">&nbsp;단기방문(C-3-1)비자 구비서류 세부사항 안내 ]</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><br/></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">접수시 빠른 처리를 위하여 구비안내 된 서류만 접수 해 주시고 안내 된 순서대로 정리하여 접수 해 주시기 바랍니다. 서류가 하나라도 누락 될 경우 접수가 불가능합니다.</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: bold;">&nbsp;</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><br/></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: bold;">1. 사증발급 신청서 1부</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">&nbsp;/ 첨부 파일 프린트 하여 작성</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">* 캐나다 국가 신분증 번호: SOCIAL INSURANCE NUMBER(SIN) 기재</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">* 인적사항, 여권정보, 연락처, 혼인사항 및 가족사항, 학력, 직업, 방문정보, 방문경비를 정확히, 최대한 상세히, 빠짐없이 기재 해 주시기 바랍니다. 초청인은 빈칸으로 비워두실 수 있습니다. 누구나 읽을 수 있도록 최대한 깔끔하게 작성 해 주시기 바랍니다.&nbsp;</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">&nbsp;&nbsp;</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: bold;">2. 여권 원본</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><br/></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: bold;">3. 여권 CLEAR 한 복사본 1부</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">&nbsp;/ 컬러 혹은 흑백 무관 &nbsp; &nbsp; &nbsp; &nbsp;</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;" class="se-zws-run"><br/></span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: bold;">4. (캐나다 국적자가 아닌 경우) 영주권 또는 기타 캐나다 체류사증 원본 및 CLEAR 한 복사본 1부</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;" class="se-zws-run"><br/></span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-weight: bold;">5. 6개월 이내 촬영한 여권용사진</span><span>&nbsp;3.5 cm x 4.5 cm 흰배경 1매 (부착 하지 마시고 뒤에 찍힌 날짜를 보여주세요) &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: bold;" class="se-zws-run"><br/></span></p><p style="line-height: 1.8; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><br/></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: bold; text-decoration: underline;">6.&nbsp;</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: bold; text-decoration: underline;">가</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: bold; text-decoration: underline;">족</span><span style="text-decoration: underline;">(신청 가능한&nbsp;</span><span style="text-decoration: underline;">가</span><span style="text-decoration: underline;">족의&nbsp;</span><span style="text-decoration: underline;">범위: 배우자, 자녀</span><span>)</span><span style="font-weight: bold; text-decoration: underline;">이 대한민국 국적이라면:</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration: underline;" class="se-zws-run"><br/></span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">6-1 대한민국 국적 가족의 대한민국 여권 복사본 및 유효한 캐나다 체류비자 복사본</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">(캐나다 체류비자가 없는 대한민국 거주 대한민국 국민이라면 이를 신청시 말씀 해 주시기 바랍니다)</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">6-2 대한민국 국적 가족과의 가족관계증명 - 가족관계증명서(상세) 혹은 혼인관계증명서(상세)</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">(둘 다 3개월 이내 발급받으신 서류여야 하며&nbsp;</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">사진 제출은 불가능하지만 스캔/복사본 제출 가능</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">)</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">* 입국 목적이 만 7세 미만 손주의 양육 지원이라면 손주가 나오도록 자녀 명의의 가족관계증명서(상세)를 발급받으시기 바랍니다.</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">6-3 입국 목적이 임신, 출산 지원인 경우&nbsp;</span><span>자녀의 이름과 손주 출산 예정일이 명시 되어있는&nbsp;</span><span>병원 진단서 추가 제출&nbsp;</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;" class="se-zws-run"><br/></span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">주의: 대한민국 국민의 가족의 범위는 가족관계 서류에 나오는 범위입니다. 한국인의 배우자이신데 한국에는 혼인신고를 누락하셨고 캐나다에만 혼인신고가 되어있으시다면 반드시 한국에도 혼인신고를 하셔야 이 비자를 신청 가능합니다.</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;" class="se-zws-run"><br/></span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px; margin-left: 40px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">2008년 이전에 국적상실 혹은 국적이탈을 하신 경우 가족관계증명서, 기본증명서 등의 서류 발급이 안될 수 있으니 제적등본(발급일 상관없음)으로 신청 하시기 바랍니다. 상세 발급안내는&nbsp;</span><a style="text-decoration: underline; color: rgb(22, 63, 199);" data-href="http://overseas.mofa.go.kr/ca-toronto-ko/brd/m_5393/view.do?seq=1012487&amp;srchFr=&amp;srchTo=&amp;srchWord=&amp;srchTp=&amp;multi_itm_seq=0&amp;itm_seq_1=0&amp;itm_seq_2=0&amp;company_cd=&amp;company_nm=&amp;page=1" data-hyperlink-id="se_392d3da5-afaa-41ad-8065-cc20cfdf52eb" target="_blank" href="http://overseas.mofa.go.kr/ca-toronto-ko/brd/m_5393/view.do?seq=1012487&amp;srchFr=&amp;srchTo=&amp;srchWord=&amp;srchTp=&amp;multi_itm_seq=0&amp;itm_seq_1=0&amp;itm_seq_2=0&amp;company_cd=&amp;company_nm=&amp;page=1"><span style="font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-skip-ink: none; text-decoration: underline;">가족관계과의 안내</span></a><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">를 참고 바랍니다.</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px; margin-left: 40px;" dir="ltr"><br/></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-skip-ink: none; text-decoration: underline;">* 원본이 없으시다면 스캐너를 사용하여 PDF로 이메일 받으시거나 스마트폰 "스캐너 앱" 이용하여 PDF로 받아 출력 하시기 바랍니다.</span></p><p style="line-height: 1.8; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><br/></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: bold; text-decoration: underline;">7. 가</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: bold; text-decoration: underline;">족</span><span style="text-decoration: underline;">(</span><span style="text-decoration: underline;">신청 가능한&nbsp;</span><span style="text-decoration: underline;">가족</span><span style="text-decoration: underline;">의&nbsp;</span><span style="text-decoration: underline;">범위: 배우자, 만18세 혹은 그 이하 자녀</span><span>)</span><span style="font-weight: bold; text-decoration: underline;">이 한국 장기체류외국인이라면:</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration: underline;" class="se-zws-run"><br/></span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">7-1 한국 장기체류 외국인 가족의 여권 복사본 및 유효한 한국 장기체류 비자 복사본(예: 재외동포국내거소증 혹은 외국인 등록증 앞/뒷면)</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">(단, D-3, D-8, E-8, E-9, E-10, G-1, H-1 비자 소지자는 가족 초청 불가능)</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">7-2&nbsp;</span><span>한국 장기체류 외국인 가족</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">과의 가족관계증명:</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">- 가족이 재외동포이거나 한국에만 출생신고, 혼인신고 등 등록이 되어있다면 가족관계증명서(상세) 혹은 혼인관계증명서(상세)</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">(3개월 이내 발급받으신 서류여야 하며 사진은 불가능하지만 스캔/복사본 제출 가능)</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">* 입국 목적이 만 7세 미만 손주의 양육 지원이라면 손주가 나오도록 자녀 명의의 가족관계증명서(상세)를 발급받으시기 바랍니다.</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">- 가족이 재외동포가 아닌 일반 외국인이라면 캐나다 정부 발행 가족관계증명서&nbsp;</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration: underline;">원본 및 복사본</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">을 제출 해 주시기 바랍니다. 배우자인 경우 CERTIFIED COPY OF MARRIAGE REGISTRATION/LICENCE를 제출 해 주시고 자녀인 경우 CERTIFIED COPY OF BIRTH REGISTRATION/STATEMENT OF LIVE BIRTH를 제출 해 주시기 바랍니다. 정확히 이 명칭의 서류만 접수 해 주시기 바랍니다. 카드형태 사이즈의 약식 서류 혹은 기타 약식 서류는 제출 불가능합니다.</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;" class="se-zws-run"><br/></span></p><p style="text-align: justify; line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">* 위 가족관계 확인 서류가 없을경우 이&nbsp;</span><a style="text-decoration: underline; color: rgb(22, 63, 199);" data-href="https://www.orgforms.gov.on.ca/eForms/start.do?lang=en%22&amp;_ga=2.108931202.104037686.1597276225-1868965459.1597276225" data-hyperlink-id="se_533292e5-4dbc-440a-8a7c-9bd7f60a6670" target="_blank" href="https://www.orgforms.gov.on.ca/eForms/start.do?lang=en%22&amp;_ga=2.108931202.104037686.1597276225-1868965459.1597276225"><span style="font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-skip-ink: none; text-decoration: underline;">온타리오 정부 사이트</span></a><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">(클릭)를 통하여 발급 받으시기 바랍니다.</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><br/></p><p style="text-align: justify; line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">* 발급 소요 기간, 발급 되는 내용 등 위 서류 관련 상세 안내는 이&nbsp;</span><a style="text-decoration: underline; color: rgb(22, 63, 199);" data-href="https://www.ontario.ca/page/get-or-replace-ontario-birth-certificate#section-5" data-hyperlink-id="se_ee177f9d-bb96-4ba8-acdc-f1317b903a20" target="_blank" href="https://www.ontario.ca/page/get-or-replace-ontario-birth-certificate#section-5"><span style="font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-skip-ink: none; text-decoration: underline;">온타리오 정부 사이트</span></a><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">(클릭)를 참고 해 주시기 바랍니다.</span></p><p style="line-height: 1.8; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><br/></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: bold;">8.&nbsp;</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-skip-ink: none; font-weight: bold; text-decoration: underline;">신청자가 재외동포(Korean descent)인 경우 추가 구비서류</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span>8-1 국적상실 혹은 국적이탈 연/월/일이 명시되어있는 본인 명의의 기본증명서(상세)(발급일로부터 3개월 이내). 3개월 이내에 발급받은 기본증명서에 명시되어있지 않다면 추가로 국적상실신고 접수증 제출(발급일 상관없음)</span><br/><br/></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">* 2008년 이전에 국적상실 혹은 국적이탈을 하신 경우 가족관계증명서, 기본증명서 등의 서류 발급이 안될 수 있으니 제적등본(발급일 상관없음)으로 신청 하시기 바랍니다. 상세 발급안내는&nbsp;</span><a style="text-decoration: underline; color: rgb(22, 63, 199);" data-href="http://overseas.mofa.go.kr/ca-toronto-ko/brd/m_5393/view.do?seq=1012487&amp;srchFr=&amp;srchTo=&amp;srchWord=&amp;srchTp=&amp;multi_itm_seq=0&amp;itm_seq_1=0&amp;itm_seq_2=0&amp;company_cd=&amp;company_nm=&amp;page=1" data-hyperlink-id="se_fccfc5ae-cc92-4990-8c08-d8a4167943c6" target="_blank" href="http://overseas.mofa.go.kr/ca-toronto-ko/brd/m_5393/view.do?seq=1012487&amp;srchFr=&amp;srchTo=&amp;srchWord=&amp;srchTp=&amp;multi_itm_seq=0&amp;itm_seq_1=0&amp;itm_seq_2=0&amp;company_cd=&amp;company_nm=&amp;page=1"><span style="font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-skip-ink: none; text-decoration: underline;">가족관계과의 안내</span></a><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">를 참고 바랍니다.</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;" class="se-zws-run"><br/></span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">-</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: bold;">&nbsp;재외동포이지만&nbsp;</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-skip-ink: none; font-weight: bold; text-decoration: underline;">출생 당시 부모 모두 캐나다 국적 취득 후여서 선천적 한국/캐나다 이중국적자가 아닌 경우</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: bold;">:</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span>위 1~7의 서류에서 별도로 제출하지 않은 경우 아래 서류를 추가로 제출 해 주시기 바랍니다(신청인 본인이 대한민국 국적자인지를 판가름하기 위한 서류입니다)</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">8-2-1 Certified copy of birth registration 혹은 Statement of live birth&nbsp;</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">원본 및 복사본(원본이 LEGAL 사이즈 입니다. 복사본이 잘리지 않도록 유의하시어 복사하시기 바랍니다)</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">* 출생연도에 따라 온타리오 주정부의 서류명칭이 조금씩 다를 수 있습니다.</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><a style="text-decoration: underline; color: rgb(22, 63, 199);" data-href="https://www.ontario.ca/page/get-or-replace-ontario-birth-certificate#section-5" data-hyperlink-id="se_1ca0be0f-4939-4034-bdd5-bce49c953800" target="_blank" href="https://www.ontario.ca/page/get-or-replace-ontario-birth-certificate#section-5"><span style="font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-skip-ink: none; text-decoration: underline;">온타리오 주정부의 Certified copy of birth registration 서류 안내 및 발급 안내 링크</span></a><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">(클릭)</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">주의: 반드시 본인의 이름과 생년월일 뿐만 아니라 부모님의 이름, 생년월일, 출생지 등 출생신고한 모든 기록이 명시된 서류여야 합니다. 온타리오주 출생이 아니라면 출생지역의 이에 상응하는 서류를 제출 해 주시기 바랍니다.</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">8-2-2 부모님의 여권 사본</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">8-2-3 부모님의 시민권 증서(</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-skip-ink: none; text-decoration: underline;">주의: 시민권 취득연/월/일이 반드시 기재된 서류어야 합니다</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">) 원본 및 사본</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><br/></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">* 모든 원본은 그 자리에서 확인 후 반환 해 드립니다. &nbsp;</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><br/></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><br/><br/></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: bold;">[ 수수료 ]</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><br/></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">- IN PERSON $54 CAD&nbsp;</span><span>(</span><span>현금, Debit카드, 신용카드 결제 가능)</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">&nbsp;(국적에 따라 수수료가 다를 수 있습니다. 기타 국적자는 신청시 별도로 안내 해 드립니다)</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">* 접촉을 최소화 하기 위하여 TAP 가능한 DEBIT CARD가 원칙입니다만 잔돈 필요없이 수수료를 정확히 준비 해 주시면 현금으로도 PAY 가능합니다</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">- 우편 접수 C$54.00 CERTIFIED CHEQUE / BANK DRAFT (개인 수표 불가능)</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><br/><br/></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: bold;">[ 발급소요기간 ]&nbsp;</span></p><p style="line-height: 1.38; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;" class="se-zws-run"><br/></span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-skip-ink: none; text-decoration: underline;">모든 서류</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">를 준비하여 제출하시는 접수일</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">로부터&nbsp;</span></p><p style="line-height: 1.38; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><br/></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: bold;">일반 90일 이하 단기방문 비자&nbsp;</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">약 12-15 BUSINESS DAY 소요</span></p><p style="line-height: 1.38; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;" class="se-zws-run"><br/></span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: bold;">가족의 장례식 참석 목적인 경우&nbsp;</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">약 1-2 BUSINESS DAY 이내로 단축 (아래의 증빙 서류를 제출 해 주시면 가능한 최대한 장례식 일정과 본인의 항공일정을 맞추어 드립니다)</span></p><p style="line-height: 1.38; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;" class="se-zws-run"><br/></span></p><p style="line-height: 1.38; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><br/></p><p style="line-height: 1.38; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><br/></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-weight: bold;">위중한 가족방문 목적인 경우&nbsp;</span><span>약 5-7 BUSINESS DAY 이내로 단축</span><span>&nbsp;(아래의 증빙 서류를 제출 해 주시면 가능한 최대한 심사기간을 단축 해 드립니다)</span><span>&nbsp;</span></p><p style="line-height: 1.38; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;" class="se-zws-run"><br/></span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">* 2021.4.19(월) 부터 우리국민의 가족인 사유로 단기방문 비자 신청이 일괄 가능해 졌습니다만 위의 예시와 같은 인도적인 목적을 예외하고 우리국민의 가족인 사유로 심사 기간 단축 신청은 더이상 불가능합니다.</span></p><p style="line-height: 1.38; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-size: 14.7px; color: rgb(0, 117, 200);" class="se-zws-run"><br/></span></p><p style="line-height: 1.38; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;" class="se-zws-run"><br/></span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-weight: bold;">[ 심사 기간 단축 요청 ]</span></p><p style="line-height: 1.38; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;" class="se-zws-run"><br/></span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">방문의&nbsp;</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">인도적 사유 및&nbsp;</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">긴급성</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">을 소명하기 위한 자료(예: 위중한 가족의 의사소견서 혹은 가족의 사망진단서)를 추가로 제출 해 주시면 인도적인 사유로 심사기간을 위와 같이 단축 가능합니다.&nbsp;</span></p><p style="line-height: 1.38; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;" class="se-zws-run"><br/></span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">위중한 가족 혹은 소천하신 가족이 구비서류 목록 6번 혹은 7번의 가족관계증명에 나와 있지 않은 경우 추가로 그 가족과 가족관계증명서</span><span>(3개월 이내 발급)를</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">&nbsp;제출 해 주시기 바랍니다. &nbsp;</span></p><p style="line-height: 1.38; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;" class="se-zws-run"><br/></span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">직계가족과의 가족관계증명은 본인명의의 가족관계증명(상세)를 제출 해 주시고 형제자매와의 가족관계증명은 부모님 명의의 가족관계증명(상세)를 제출 해 주시기 바랍니다. 2008년 이전 국적상실 혹은 이탈을 하여 가족관계증명서 발급이 불가능한 경우 대체서류로 제적등본을 제출 해 주시기 바랍니다.</span></p><p style="line-height: 1.38; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;" class="se-zws-run"><br/></span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">모든 심사기간 단축 서류는 사진 제출은 불가능</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">하지만 스캔/복사본 제출 가능합니다.</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-skip-ink: none; text-decoration: underline;">* 스캐너를 사용하여 PDF로 받으시거나 스마트폰 "스캐너 앱" 이용하여 PDF로 받으시기 바랍니다.</span></p><p style="line-height: 1.8; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-skip-ink: none; text-decoration: underline;" class="se-zws-run"><br/></span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-skip-ink: none; font-weight: bold;">직계가족(부모님, 자녀, 조부모 및 배우자의 부모님, 조부모) 혹은 형제자매의 한국 내 장례식 참석</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: bold;">:</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">대상자의 사망증명서/시체검안서/사망진단서(3가지 중 발급 가능한 1개) 및 그 대상자와 비자 신청인과의 가족관계증명</span></p><p style="line-height: 1.8; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;" class="se-zws-run"><br/></span></p><p style="line-height: 1.38; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><br/></p><p style="line-height: 1.8; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><br/></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">직계가족 혹은 형제자매의 한국 내 장례식 참석위한 비자를 신청하실때&nbsp;</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration: underline;">장례일정 참석</span><span>(최대 7일)</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">을 위한 격리면제서 또한 함께 신청 가능하십니다. (사망증명서에 명시된 사망일시 최대 5-6일 이내까지 격리면제서 신청 가능. 사망일로부터 상당한 일수가 지난 경우 격리면제서 신청 불가능.) 상세 안내는&nbsp;</span><a style="text-decoration: underline; color: rgb(22, 63, 199);" data-href="http://overseas.mofa.go.kr/ca-toronto-ko/brd/m_5390/view.do?seq=1231183&amp;srchFr=&amp;srchTo=&amp;srchWord=&amp;srchTp=&amp;multi_itm_seq=0&amp;itm_seq_1=0&amp;itm_seq_2=0&amp;company_cd=&amp;company_nm=&amp;page=1" data-hyperlink-id="se_53393a01-0c5a-407a-a6b0-d36acf94d414" target="_blank" href="http://overseas.mofa.go.kr/ca-toronto-ko/brd/m_5390/view.do?seq=1231183&amp;srchFr=&amp;srchTo=&amp;srchWord=&amp;srchTp=&amp;multi_itm_seq=0&amp;itm_seq_1=0&amp;itm_seq_2=0&amp;company_cd=&amp;company_nm=&amp;page=1"><span style="font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-skip-ink: none; text-decoration: underline;">링크</span></a><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">를 확인 해 주시기 바랍니다.</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><br/></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-skip-ink: none; font-weight: bold;">위중한 직계가족(부모님, 자녀, 조부모 및 배우자의 부모님, 조부모) 또는 형제자매를 방문하시고자 하는 경우</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: bold;">:&nbsp;</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: bold;">&nbsp;</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">﻿</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span>예시 문구: "위중", "임종중", "기대여명이 얼마 남지 않음", "XX암 말기" 등</span></p><p style="line-height: 1.8; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><br/></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-skip-ink: none;">※ 부모님 혹은 형제자매가 단순히 연세가 많으시다거나 위중하신것은 아니지만 병원에 내원하시거나 수술을 앞두고 계시거나 입원해 계시는 등 편찮으시다면 심사기간 단축이 불가능합니다.&nbsp;</span></p><p style="line-height: 1.8; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-skip-ink: none; text-decoration: underline;" class="se-zws-run"><br/></span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><span style="font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-skip-ink: none; text-decoration: underline;">※ 담당직원에게 진단서 혹은 소견서 제출 이외에 사진, 별도의 편지 등 기타자료 제출은 불필요합니다. 공관 직원에게 가족이 병상에 누워계시는 사진을 보여주시는것은 자제 해 주시기 바랍니다. 감사합니다.</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><br/></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><br/></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><a style="text-decoration: underline; color: rgb(22, 63, 199);" data-href="http://overseas.mofa.go.kr/ca-toronto-ko/brd/m_5390/view.do?seq=1231160&amp;srchFr=&amp;srchTo=&amp;srchWord=&amp;srchTp=&amp;multi_itm_seq=0&amp;itm_seq_1=0&amp;itm_seq_2=0&amp;company_cd=&amp;company_nm=&amp;page=1" data-hyperlink-id="se_0b6428b4-a13c-48a7-959b-dc5148089916" target="_blank" href="http://overseas.mofa.go.kr/ca-toronto-ko/brd/m_5390/view.do?seq=1231160&amp;srchFr=&amp;srchTo=&amp;srchWord=&amp;srchTp=&amp;multi_itm_seq=0&amp;itm_seq_1=0&amp;itm_seq_2=0&amp;company_cd=&amp;company_nm=&amp;page=1"><span style="font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-skip-ink: none; font-weight: bold; text-decoration: underline;">조회 방법 안내 게시글</span></a><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">&nbsp;☜&nbsp;</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: bold;">클릭</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">&nbsp;하여 확인 해 주시기 바랍니다.</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><br/></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><a style="text-decoration: underline; color: rgb(22, 63, 199);" data-href="http://overseas.mofa.go.kr/ca-toronto-ko/brd/m_5390/view.do?seq=1231174&amp;srchFr=&amp;srchTo=&amp;srchWord=&amp;srchTp=&amp;multi_itm_seq=0&amp;itm_seq_1=0&amp;itm_seq_2=0&amp;company_cd=&amp;company_nm=&amp;page=1" data-hyperlink-id="se_f7326076-d92d-487c-8345-d129d18cef9d" target="_blank" href="http://overseas.mofa.go.kr/ca-toronto-ko/brd/m_5390/view.do?seq=1231174&amp;srchFr=&amp;srchTo=&amp;srchWord=&amp;srchTp=&amp;multi_itm_seq=0&amp;itm_seq_1=0&amp;itm_seq_2=0&amp;company_cd=&amp;company_nm=&amp;page=1"><span style="font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-skip-ink: none; font-weight: bold; text-decoration: underline;">우편으로 비자신청 하시고자 하는 경우</span></a><span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: bold;">&nbsp;</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">☜&nbsp;</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: bold;">클릭</span><span style="font-variant-numeric: normal; font-variant-east-asian: normal;">&nbsp;하여 확인 해 주시기 바랍니다.</span></p><p style="line-height: 1.5; margin-top: 0px; margin-bottom: 0px;" dir="ltr"><br/></p></div>
+	</div>
+	
+	<ul class="bo_util">
+     
+     
+   </ul>
+   
+   
+   <div class="bo_btn">
+     <a href="./list.do?page=1&amp;srchFr=&amp;srchTo=&amp;srchWord=&amp;srchTp=&amp;multi_itm_seq=0&amp;itm_seq_1=0&amp;itm_seq_2=0&amp;company_cd=&amp;company_nm=" class="blue">목록</a>
+   </div>
+   <nav class="bo_pagination">
+			<a href="#" class="prev"><b>이전 글</b>
+				<span>
+					 [C-3-4][일반상용] 비자 신청 : 한국 단기 출장
+					<!-- 이전글 없을 경우 -->
+					
+				</span>
+			</a>
+			<a href="#" class="next"><b>다음 글</b>
+				<span>
+					 [F-4-11][재외동포] 대한민국 국적을 보유하였던 사람
+					<!-- 다음글 없을 경우 -->
+					
+				</span>
+			</a>
+		</nav>
+</div>
+
+<div id="ajax_loading_bg" class="ajax_hide" >
+	<div id="ajax_loading_center"><img id="ajax_loading_img" src="/images/egovframework/cms/loading/ajax-loader.gif" alt="loading"/></div>
+</div>
+<iframe id="_h_blank" name="_h_blank" frameborder="0" height="0" width="0" title="내용없음"></iframe> 
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+	$(document).ready(function(){
+		getOpenAbroadList($('#cntt').val());
+		$("#cntt").append("<option value=''>:::대륙선택:::</option>");
+		$("#emblgbd").append("<option value=''>:::공관선택:::</option>");
+
+
+	});
+
+	//대륙코드선택 selectBox
+	function getOpenAbroadList(_cntt){
+		//재외공관한글명바로가기 abroadKo
+		if(_cntt != "")
+		$.post("/cmmn/abroadKoSelectBox.do",{cntt : _cntt},setOpenAbroadList, "json");
+	}
+
+	//공관선택 selectBox
+	function setOpenAbroadList(data, status){
+		if ( 'success' != status || null == data ) { alert("조회하지 못하였습니다."); return; }
+		var obj = $('select[name="emblgbd"]');
+		obj.children().remove();
+		$("#emblgbd").append("<option value=''>:::공관선택:::</option>");
+		if(data.vo.length == 9){
+		for(var i =0; i < data.vo.length; i++){
+			$("#cntt").append("<option value="+data.vo[i].code+">"+data.vo[i].description+"</option>");
+		}
+		}else {
+			for(var i =0; i < data.vo.length; i++){
+				$("#emblgbd").append("<option value="+data.vo[i].deptNm+">"+data.vo[i].description+"</option>");
+			}
+		}
+
+	}
+	//공관링크바로가기
+	function goabroad(url){
+		var chkurl="";
+		if(url != chkurl){window.open(url);	return;}
+	}
+//]]>
+</script>
+	
+			</div>
+		</div>
+	</div>
+	
+	<!-- 푸터 -->
+    <div class="footer">
+      <div class="addr">
+        <div class="container">
+          <dl>
+          
+          	<dt>주토론토 대한민국 총영사관</dt>
+						<dd class="add">주소 : 555 Avenue Road, Toronto, Ontario, Canada, M4V 2J7</dd>
+						<dd>대표전화 : 416-920-3809 <br />
+근무시간외 사건·사고 긴급/휴대전화 : 416-994-4490<br/>
+민원실 업무시간 : 09:00 ~ 12:00 / 13:00 ~ 16:30</dd>
+          
+<!-- 						<dt>주 토론토 대한민국 총영사관</dt> -->
+<!--             <dd class="add">주소 : 555 Avenue Road, Toronto, Ontario, Canada, M4V 2J7</dd> -->
+<!--             <dd>전화번호 : 416-920-3809 (근무시간외 사건·사고 긴급/휴대전화 : 416-994-4490) | 민원실 업무시간 : 오전 9:00 - 오후 4:30</dd> -->
+          </dl>
+          <nav class="fnb">
+	          
+<form name="form2" >
+	<div class="link">
+    	<div class="select">
+	      <select name="#" title="재외공관링크:대륙선택" id="cntt" name="cntt" onchange="javascript:getOpenAbroadList(this.value)"></select>
+    	</div>
+	    <div class="select">
+	      <select id="emblgbd" name="emblgbd" onchange="javascript:goabroad(this.value)" title="국가선택"></select>
+	    </div>
+  </div>
+</form>
+
+            
+		<ul>
+			<li><a href="http://www.mofa.go.kr/www/wpge/m_4194/contents.do" target="_blank" title="새창에서 열림">개인정보처리방침</a></li>
+			<li><a href="http://www.mofa.go.kr/www/wpge/m_4190/contents.do" target="_blank" title="새창에서 열림">저작권정책</a></li>
+			<li class="last"><a href="http://www.mofa.go.kr/www/wpge/m_4187/contents.do" target="_blank" title="새창에서 열림">뷰어프로그램</a></li>
+		</ul>
+
+            
+            <div class="view_mode ">
+              <span>텍스트 모드</span>
+              <a href="index.do?textMode=Y">
+               OFF
+              </a>
+            </div>
+          </nav>
+          
+	<div class="copy">
+	  <span>Copyright © Ministry of Foreign Affairs. All Rights Reserved.</span>
+	  <ol>
+	    <li><a href="https://www.facebook.com/mofakr.kr" target="_blank" title="새창"><img src="/common-embd/images/common/icon_facebook.png" alt="페이스북"></a></li>
+	    <li><a href="https://www.instagram.com/mofa_kr/" target="_blank" title="새창"><img src="/common-embd/images/common/icon_insta.png" alt="인스타그램"></a></li>
+	    <li><a href="https://www.youtube.com/user/MOFAKorea" target="_blank" title="새창"><img src="/common-embd/images/common/icon_youtube.png" alt="유튜브"></a></li>
+	  	<li><a href="https://twitter.com/mofa_kr" target="_blank" title="새창"><img src="/common-embd/images/common/icon_twitter.png" alt="트위터"></a></li>
+	  </ol>
+	</div>
+        </div>
+
+      </div>
+    </div>
+    <!-- //푸터 -->
+		
+
+<div class="modal_wrap">
+  <div class="modal_pop">
+<!--     <h2>팝업존</h2> -->
+    <div class="pop_banner">
+      <div class="slide"></div>
+      <div class="control">
+        <div class="pagination_num"></div>
+        <button class="prev">이전</button>
+        <button class="pause">자동재생 정지</button>
+        <button class="next">다음</button>
+      </div>
+    </div>
+    <div class="modal_close">
+     	
+     		 
+		      <button type="button" onclick="return closeWin('ca-toronto-ko')">일주일간 이 창 닫기</button>
+		      <button type="button" class="loop">팝업 닫기</button>
+				
+				
+     	
+
+    </div>
+  </div>
+
+</div>
+
+<div class="btn_quick" style="display:none">
+  <button type="button" class="modal_open_close"><span class="hide">팝업버튼 닫기</span></button>
+  <button type="button" class="modal_open">POPUP</button>
+  <button type="button" class="scroll_top"><img src="/common-embd/images/common/arrow_scrollup.png" alt="상단으로"></button>
+</div>
+
+<link rel="stylesheet" href="/common-embd/css/jquery-ui.min.css" />
+<script src="/common-embd/js/jquery-ui.min.js"></script>
+<script src="/common-embd/js/datepicker-ko.js"></script>
+
+<script type="text/javascript">
+
+$(function() {
+	 var totPop = 0;
+	selectWinOpenAjax('ca-toronto-ko');
+
+	//재외공간 윈도우 팝업존
+	function selectWinOpenAjax(id){
+		$.post("/cmmn/selectWinOpenAjax.do",{site_id : id},setWinOpenList, "json");
+	}
+
+	//재외공간 윈도우 팝업존
+	function setWinOpenList(data, status){
+
+		if ( 'success' != status || null == data ) { alert("조회하지 못하였습니다."); return; }
+		var obj = $('.modal_wrap .modal_pop .pop_banner .slide');
+		obj.children().remove();
+
+		for(var i =0; i < data.abwinopen.length; i++){
+			if ($('html').attr('lang') == 'ko') {
+				$(obj).append("<div class='box' tabindex='0'><div class='item'><div><div>"+data.abwinopen[i].ctnt+"</div></div></div><div class='layer'><span>전체보기</span></div></div>");
+			}else {
+				$(obj).append("<div class='box' tabindex='0'><div class='item'><div><div>"+data.abwinopen[i].ctnt+"</div></div></div><div class='layer'><span>View all</span></div></div>");
+			}
+		}
+		// 중동국가들에 대해서는 KTV 팝업이 나타나지 않도록 수정. - 행정관님 요청 / 2026.03.09.
+		/* for(var i =0; i < data.winopen.length; i++){
+			if ($('html').attr('lang') == 'ko') {
+				$(obj).append("<div class='box' tabindex='0'><div class='item'><div><div>"+data.winopen[i].ctnt+"</div></div></div><div class='layer'><span>전체보기</span></div></div>");
+			}else {
+				$(obj).append("<div class='box' tabindex='0'><div class='item'><div><div>"+data.winopen[i].ctnt+"</div></div></div><div class='layer'><span>View all</span></div></div>");
+			}
+		} */
+		if( 'ca-toronto-ko'.includes('ae-') ||
+				'ca-toronto-ko'.includes('bh-') ||
+				'ca-toronto-ko'.includes('il-') ||
+				'ca-toronto-ko'.includes('iq-') ||
+				'ca-toronto-ko'.includes('ir-') ||
+				'ca-toronto-ko'.includes('sa-') ||
+				'ca-toronto-ko'.includes('jo-') ||
+				'ca-toronto-ko'.includes('kw-') ||
+				'ca-toronto-ko'.includes('lb-') ||
+				'ca-toronto-ko'.includes('ps-') ||
+				'ca-toronto-ko'.includes('qa-') ||
+				'ca-toronto-ko'.includes('om-') ||
+				'ca-toronto-ko'.includes('ye-') ){
+			for(var i =0; i < data.winopen.length; i++){
+				if(!data.winopen[i].ctnt.includes('ktv') && !data.winopen[i].ctnt.includes('KTV')){
+					if ($('html').attr('lang') == 'ko') {
+						$(obj).append("<div class='box' tabindex='0'><div class='item'><div><div>"+data.winopen[i].ctnt+"</div></div></div><div class='layer'><span>전체보기</span></div></div>");
+					}else {
+						$(obj).append("<div class='box' tabindex='0'><div class='item'><div><div>"+data.winopen[i].ctnt+"</div></div></div><div class='layer'><span>View all</span></div></div>");
+					}
+				}	//end if - i > 0			
+			}
+		}else{
+			for(var i =0; i < data.winopen.length; i++){
+				if ($('html').attr('lang') == 'ko') {
+					$(obj).append("<div class='box' tabindex='0'><div class='item'><div><div>"+data.winopen[i].ctnt+"</div></div></div><div class='layer'><span>전체보기</span></div></div>");
+				}else {
+					$(obj).append("<div class='box' tabindex='0'><div class='item'><div><div>"+data.winopen[i].ctnt+"</div></div></div><div class='layer'><span>View all</span></div></div>");
+				}
+			}
+		}
+		
+		
+		var cnt = data.winopen.length+data.abwinopen.length;
+		
+		$("#openCnt").text(cnt);
+		var windowWidth = $(window).width();
+		if (windowWidth < 1079){
+			if(cnt > 0){
+				$(".btn_quick").show();
+			}
+		} 
+		
+		//팝업 슬라이드
+		  var popSlide = $(".pop_banner .slide");
+		  
+		  popSlide.on(
+		    "init reInit afterChange",
+		    function (event, slick, currentSlide, nextSlide) {
+		      var i = (currentSlide ? currentSlide : 0) + 1;
+		      $(".pop_banner .pagination_num").html(
+		        '<span class="current">' + i + "</span> / " + slick.slideCount
+		      );
+		      
+		    }
+		  );
+		  popSlide.slick({
+		    autoplay: true,
+		    cssEase: "ease-in",
+		    dots: false,
+		    rows:1,
+		    slidesPerRow: 1,
+		    slidesToShow:1,
+		    mobileFirst: true,
+		    swipeToSlide: true,    
+		    prevArrow: $(".pop_banner .prev"), //arrow 설정
+		    nextArrow: $(".pop_banner .next"), //arrow 설정
+		    responsive: [
+		      {
+		        //반응형
+		        breakpoint: 720,
+		        settings: {
+		          rows:2,
+		          slidesPerRow: 2,
+		          slidesToShow:1,
+		        },
+		      },      
+		    ],     
+		  });
+		  $(".pop_banner .pause").click(function () {
+		    if ($(this).hasClass("play")) {
+		      $(this).removeClass("play").text("자동재생 정지");
+		      popSlide.slick("slickPlay");
+		    } else {
+		      $(this).addClass("play").text("자동재생 시작");
+		      popSlide.slick("slickPause");
+		    }
+		  });
+		  $(document).on('click', '.pop_banner .slide .box', function (event) {
+			    if ($('html').attr('lang') == 'ko') {
+			      $(event.target).closest('.box').find('.item').clone().addClass('pop').appendTo('#wrapper').children().append('<button type="button">접기<span class="wave1"></span><span class="wave2"></span><span class="wave3"></span></button>');
+			    } else {
+			      $(event.target).closest('.box').find('.item').clone().addClass('pop').appendTo('#wrapper').children().append('<button type="button">Fold<span class="wave1"></span><span class="wave2"></span><span class="wave3"></span></button>');
+			    }
+			  });
+		  $(document).on('click','.item.pop button',function(){
+		    $('.item.pop').remove();
+		  });
+		  
+		  totPop = data.winopen.length+data.abwinopen.length ;
+		  
+		  if(totPop > 0 ){
+			  
+			  
+		  $('.modal_open').on('click',function(){//모달팝업 오픈
+			  	openPopup();
+			    popSlide.slick('setPosition');//슬라이드 리셋
+			    imgResize();
+			  });
+		  
+		  }
+	}
+	
+
+	if ( getCookie( "modal_wrap_ca-toronto-ko" ) != "done" && totPop > 0 ) {
+		openPopup();
+	}else {
+		$(".modal_wrap").css("display","none");
+	}
+
+
+	$(".close-poplayer").on("click",function(e){
+		e.preventDefault();
+		$(this).parent().parent().fadeOut(300);
+	});
+	
+	
+});
+
+function getCookie( name ){
+	var nameOfCookie = name + "=";
+
+	var x = 0;
+	while ( x <= document.cookie.length )
+	{
+		var y = (x+nameOfCookie.length);
+		if ( document.cookie.substring( x, y ) == nameOfCookie ) {
+			if ( (endOfCookie=document.cookie.indexOf( ";", y )) == -1 )
+				endOfCookie = document.cookie.length;
+			return unescape( document.cookie.substring( y, endOfCookie ) );
+		}
+		x = document.cookie.indexOf( " ", x ) + 1;
+		if ( x == 0 )
+			break;
+	}
+	return "";
+}
+
+function setCookie( name, value, expiredays ) {
+	var todayDate = new Date();
+	todayDate.setDate( todayDate.getDate() + expiredays );
+	document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+}
+
+function closeWin(name) {
+	setCookie( "modal_wrap_ca-toronto-ko", "done" , 7);
+	$(".modal_wrap_ca-toronto-ko").fadeOut(300);
+
+}
+
+
+</script>
+<!-- //팝업존 -->
+<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+
+<script type ="text/javascript">
+
+var k_url =window.location.href;
+
+Kakao.init('1eb73651f9041197c35a858272a868f6');
+$('a#kakaotalk').on('click', function(){
+		//<![CDATA[
+			Kakao.Link.sendDefault({
+			        objectType: 'feed',
+			        content: {
+			          title: '[C-3-1][단기방문] 비자 신청 : 대한민국 국민의 가족 혹은 국내 장기체류외국인의 가족 상세보기|비자 | 주토론토 대한민국 총영사관',
+			          imageUrl: '',
+			          link: {
+			            mobileWebUrl: k_url,
+			            webUrl:  k_url
+			          }
+			        },
+			        buttons: [
+			          {
+			            title: '홈페이지로이동',
+			            link: {
+			            mobileWebUrl: k_url,
+		   	            webUrl:  k_url
+			            }
+			          }
+			        ]
+			    });
+			 //]]>
+			 return false;
+       
+});
+</script>
+	</div>
+</body>
+</html>
+<script type="text/javascript" src="/js/weblog/mofa-ca-toronto-ko.js" ></script>
+<noscript><img src="http://log.mofa.go.kr/tracker.1.tsp?u=1084&js=N" width="0" height="0" alt=""/></noscript>

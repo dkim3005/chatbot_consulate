@@ -1,0 +1,15 @@
+[Unit]
+Description=Toronto Consulate Chatbot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/dk/Project/chatbot_consulate
+ExecStart=/usr/bin/python3 -m uvicorn app:app --host 0.0.0.0 --port 8000
+Restart=always
+RestartSec=5
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,1665 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>[안내] 동포범위 확대에 따른 재외동포(F-4)비자 변경 내용  상세보기|비자  |  주토론토 대한민국 총영사관</title>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes"/>
+<meta name="description" content="토론토 지역 정보, 재외국민 영사서비스, 공관 소식, 기타 생활정보 안내."><!-- 네이버 검색 -->
+<meta name="author" content="주토론토 대한민국 총영사관" />
+<meta property="og:title" content="주토론토 대한민국 총영사관 ">
+<meta property="og:site_name" content="주토론토 대한민국 총영사관 ">
+<meta property="og:description" content="주토론토 대한민국 총영사관 ">
+<meta property="og:url" content="https://overseas.mofa.go.kr/ca-toronto-ko/index.do">
+
+<script type="application/ld+json">
+	{
+		"@context" : "https://schema.org",
+		"@type" : "WebSite",
+		"name" : "주토론토 대한민국 총영사관",
+		"url" : "https://overseas.mofa.go.kr/ca-toronto-ko/index.do"
+	}
+</script>
+
+	<link rel="stylesheet" href="/common-embd/css/default.css?v=2024121101" />
+<link rel="stylesheet" href="/common-embd/css/custom.css" />
+	<link rel="stylesheet" href="/common-embd/css/slick.css" />
+
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+
+<!-- 공통 js -->
+<script type="text/javascript" src="/common-embd/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="/common-embd/js/placeholders.min.js"></script>
+<!-- <script src="../js/prefixfree.min.js"></script> -->
+<script type="text/javascript" src="/common-embd/js/slick.js"></script>
+<script type="text/javascript" src="/common-embd/js/common.js"></script>
+<script type="text/javascript" src="/common-embd/js/top-common.js"></script>
+<!-- //공통 js -->
+
+
+
+			 <!-- // add 2017.09.06 add -->
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+function onDelete(_seq){
+	if(confirm("삭제 하시겠습니까?")){
+		document.mainform.action="./delete.do";
+		document.mainform.submit();
+	}	
+}
+
+//]]>
+
+$(function() {
+	// 이전글 클릭 이벤트
+	$("nav.bo_pagination > a.prev").on("click", function(e) {
+		
+		return false;
+	});
+	
+	// 다음글 클릭 이벤트
+	$("nav.bo_pagination > a.next").on("click", function(e) {
+		 
+		location.href = "./view.do?seq=1231222&amp;srchFr=&amp;amp;srchTo=&amp;amp;srchWord=&amp;amp;srchTp=&amp;amp;multi_itm_seq=0&amp;amp;itm_seq_1=0&amp;amp;itm_seq_2=0&amp;amp;company_cd=&amp;amp;company_nm=";
+		
+		return false;
+	});
+});
+
+</script>
+
+
+<script type="text/javascript">
+$( function (){
+	selectRelatedEmbdListAjax("ca","ca-toronto-ko");
+
+	//프린트
+	$("#btnPrint").click(function() {$("#print_area").printThis();});
+
+	$("input[name=search_btn]").keydown(function (key) {//통합검색 키가 13이면 실행 (엔터는 13)
+		if(key.keyCode == 13){ $("#search_btn").trigger('click');}
+	});
+	$("#search_btn").click(function() {// respon 통합검색PC
+		$('form[name=wise_sub]').submit();
+	});
+	
+});
+
+//연계공관 selectBox
+function selectRelatedEmbdListAjax(_cntt,_siteid){
+		$.post("/cmmn/selectRelatedEmbdListAjax.do",{cntt : _cntt, siteid : _siteid},setRelatedEmbdList, "json");
+}
+
+//공관선택 selectBox
+function setRelatedEmbdList(data, status){
+	if ( 'success' != status || null == data ) { alert("조회하지 못하였습니다."); return; }
+	$('.top_link > button').eq(0).after("<ul class=\"dep2\"></ul>");
+	$('.top_link > button').eq(1).after("<ul class=\"dep2\"></ul>");
+
+	var obj1 = $('.top_link > button').eq(0).next();
+	var obj2 = $('.top_link > button').eq(1).next();
+
+	for(var i =0; i < data.vo.length; i++){
+		var innerHtml = "<li><a href=\""+data.vo[i].url+"\" target=\"_blank\" title=\"새창\">"+data.vo[i].itmNm+"</a></li>";
+
+		
+		obj1.append(innerHtml);
+		obj2.append(innerHtml);
+	}
+}
+</script>
+</head>
+<body id="subpage"><!-- 서브페이지에는 id="subpage" 추가 -->
+<div id="wrapper" class="ko">
+	<!-- 스킵내비게이션 -->
+	<div class="skip_navi" id="skiptoContent">
+		<strong class="hide">바로가기 메뉴</strong>
+		<a href="#contents">본문 바로가기</a>
+		<a href="#gnb">주메뉴 바로가기</a>
+	</div>
+	<!--//스킵내비게이션 -->
+	<!-- 헤더 -->
+	<div class="header">
+<div id="masthead" class="gov-info">
+<div class="toggle-wrap container">
+<div class="toggle-head">
+<div class="inner">
+<span class="nuri-txt">이 누리집은 대한민국 공식 전자정부 누리집입니다.</span>
+</div>
+</div>
+</div>
+</div>
+		<div class="util container">
+			<ul>
+				<li>
+					<a href="http://www.mofa.go.kr/www/index.do" target="_blank" title="새창">
+						<img src="/common-embd/images/common/icon_topmenu_1.png" alt="">
+						<span>외교부</span>
+					</a>
+				</li>
+				<li><a href="http://www.president.go.kr/" target="_blank" title="새창"><img src="/common-embd/images/common/Presidential_Office_CI-black.png" alt=""><span>청와대</span></a></li>
+				<li><a href="/ca-toronto-ko/wpge/m_24147/contents.do" target="_blank" title="새창"><img src="/common-embd/images/common/icon_topmenu_6.png" alt="">
+					<span>RSS</span></a>
+				</li>
+			</ul>
+			<ol class="acodian2">
+				<li class="top_link">
+					<button type="button">
+						<img src="/common-embd/images/common/icon_topmenu_3.png" alt="">
+						<span>캐나다 내 공관</span>
+				</li>
+				<li class="top_sns">
+					<button type="button">
+						<img src="/common-embd/images/common/icon_topmenu_4.png" alt="">
+						<span>공관 소셜미디어</span>
+					</button>
+					<ul>
+						<li><a href="https://twitter.com/MofaToronto" target="_blank" title="새창에서 열림" class="twitter">X</a></li>
+						<li><a href="https://www.facebook.com/KoreanConsulate" target="_blank" title="새창에서 열림" class="facebook">facebook</a></li>
+						<li><a href="https://www.instagram.com/mofatoronto" target="_blank" title="새창에서 열림" class="insta">instagram</a></li>
+						<li><a href="https://www.youtube.com/channel/UCS2ooTpoco6vbkfjGfWl7wQ" target="_blank" title="새창에서 열림" class="youtube">youtube</a></li>
+					</ul>
+				</li>
+				<li class="lang">
+					<button type="button">
+						<img src="/common-embd/images/common/icon_topmenu_5.png" alt="">
+						<span>KOREAN</span>
+					</button>
+					<ul>
+						<li><a href="#">KOREAN</a></li>
+						<li><a href="/ca-toronto-en/index.do">English</a></li>
+					</ul>
+				</li>
+			</ol>
+		</div>
+		<div class="logo_wrap">
+			<h1 class="logo"><a href="/ca-toronto-ko/index.do"><span>주토론토 대한민국 총영사관</span></a></h1>
+			<button type="button" class="modal_open">팝업<span id="openCnt"></span></button>
+		</div>
+		<div id="gnb">
+			<div class="container">
+				<ol class="lang">
+					<li><a href="#">KOREAN</a></li>
+					<li><a href="/ca-toronto-en/index.do">English</a></li>
+				</ol>
+				<ul class="dep1">
+					
+					<li>
+						<a href="/ca-toronto-ko/wpge/m_5384/contents.do">공관소개</a>
+
+					
+						<ul class="dep2">
+							<li><a href="/ca-toronto-ko/wpge/m_5384/contents.do" >총영사 인사말</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/wpge/m_5386/contents.do" >총영사관 연혁</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/wpge/m_5385/contents.do" >주소 및 연락처</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/wpge/m_20270/contents.do" >근무시간 및 휴무일</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/wpge/m_5387/contents.do" >업무별 연락처</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5399/list.do" >공관 활동</a>
+							
+							</li>
+							</ul>
+						
+						</li>
+					
+					<li>
+						<a href="/ca-toronto-ko/brd/m_24644/list.do">영사 서비스</a>
+
+					
+						<ul class="dep2">
+							<li><a href="/ca-toronto-ko/brd/m_24644/list.do" >자주묻는질문(FAQ)</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5389/list.do" >여권</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5390/list.do" >비자</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5391/list.do" >공증</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5392/list.do" >병역</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5393/list.do" >가족관계등록</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5394/list.do" >국적</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_27012/list.do" >공동/금융 인증서</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_21301/list.do" >각종 증명서 발급</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5395/list.do" >재외국민등록</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_24767/list.do" >해외 이주 신고</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_24645/list.do" >순회영사</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5396/list.do" >양식 다운로드</a>
+							
+							</li>
+							</ul>
+						
+						</li>
+					
+					<li>
+						<a href="/ca-toronto-ko/brd/m_5397/list.do">뉴스</a>
+
+					
+						<ul class="dep2">
+							<li><a href="/ca-toronto-ko/brd/m_5397/list.do" >공지사항</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_21240/list.do" >문화 포커스</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_25433/list.do" >캐나다한국교육원</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5398/list.do" >한인단체 소식창</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_28930/list.do" >수출수주 알리미</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5405/list.do" >정치·경제·통상</a>
+							
+							</li>
+							</ul>
+						
+						</li>
+					
+					<li>
+						<a href="/ca-toronto-ko/brd/m_27271/list.do">정보마당</a>
+
+					
+						<ul class="dep2">
+							<li><a href="/ca-toronto-ko/brd/m_27271/list.do" >해외여행안전정보</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/wpge/m_28581/contents.do" >캐나다 및 관할지역 정보</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/wpge/m_28582/contents.do" >도착 전 준비사항</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/wpge/m_28583/contents.do" >현지 여행 정보</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/wpge/m_28584/contents.do" >현지 생활 정보</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5420/list.do" >워킹홀리데이</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5422/list.do" >동포단체 소개</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5404/list.do" >지상사·무역단체 소개</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/wpge/m_28585/contents.do" >공공기관 홈페이지</a>
+							
+								<ul class="dep3">
+									<li><a href="https://www.kotra.or.kr/subList/20000005998/ovrssKbc/selectOvrssKbcDetail.do?deptCd=9312"  target="_blank" title="새창열림">토론토무역관(KOTRA)</a></li>
+								
+							
+								
+									<li><a href="http://english.visitkorea.or.kr/enu/KOO/KOO_EN_10_2.jsp"  target="_blank" title="새창열림">한국관광공사 토론토지사</a></li>
+								
+							
+								
+									<li><a href="https://www.komir.or.kr/kor/contents/27"  target="_blank" title="새창열림">한국광해광업공단 캐나다사무소</a></li>
+								
+							
+								
+									<li><a href="https://www.cakec.com/"  target="_blank" title="새창열림">캐나다 한국 교육원</a></li>
+								
+									</ul>
+								
+							
+							</li>
+							</ul>
+						
+						</li>
+					
+					<li>
+						<a href="/ca-toronto-ko/wpge/m_5415/contents.do">전자민원</a>
+
+					
+						<ul class="dep2">
+							<li><a href="/ca-toronto-ko/wpge/m_5415/contents.do" >질의/응답 답변안내</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="https://consul.mofa.go.kr/cipl/0100/login.do?authFailed=N"  target="_blank" title="새창열림">재외동포 365민원포털</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="https://www.mofa.go.kr/www/brd/m_4112/list.do"  target="_blank" title="새창열림">칭찬합시다</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_28929/list.do" >기업지원헬프데스크</a>
+							
+							</li>
+							</ul>
+						
+						</li>
+					
+				</ul>
+				<div class="search_box">
+					<button type="button" class="btn_search"><span class="hide">검색창 열기</span></button>
+					<form name="wise_sub" action="https://search.mofa.go.kr/search/search_embd_ko.do" target="_blank" method="post">
+						<fieldset>
+							<legend>검색 입력 폼</legend>
+							<div class="search">
+								<input type="text" name="query" value="" id="searchKeyWord" title="검색어를 입력해주세요.">
+								<button type="button" id="search_btn"><span class="hide">검색</span></button>
+								<input type="hidden" name="siteId" value="ca-toronto-ko">
+									<input type="hidden" name="siteNm" value="주토론토 대한민국 총영사관">
+                </div>
+						</fieldset>
+					</form>
+				</div>
+				<button type="button" class="btn_sitemap_open"><span class="hide">사이트맵 열기</span></button>
+			</div>
+		</div>
+
+		<div class="sitemap">
+			<div class="container">
+				<ol class="link">
+					<li><a href="http://www.mofa.go.kr/www/index.do" target="_blank" title="새창"><img src="/common-embd/images/common/icon_sitemap_1.png" alt="">
+							<span>외교부</span></a>
+					</li>
+					<li><a href="http://www.president.go.kr/" target="_blank" title="새창"><img src="/common-embd/images/common/Presidential_Office_CI-white.png" alt="">
+						<span>청와대</span></a>
+					</li>
+				</ol>
+				<ul class="dep1" style="display:none;">
+					
+					<li>
+						<a href="/ca-toronto-ko/wpge/m_5384/contents.do">공관소개</a>
+
+					
+						<ul class="dep2">
+							<li><a href="/ca-toronto-ko/wpge/m_5384/contents.do" >총영사 인사말</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/wpge/m_5386/contents.do" >총영사관 연혁</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/wpge/m_5385/contents.do" >주소 및 연락처</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/wpge/m_20270/contents.do" >근무시간 및 휴무일</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/wpge/m_5387/contents.do" >업무별 연락처</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5399/list.do" >공관 활동</a>
+							
+							</li>
+							</ul>
+						
+						</li>
+					
+					<li>
+						<a href="/ca-toronto-ko/brd/m_24644/list.do">영사 서비스</a>
+
+					
+						<ul class="dep2">
+							<li><a href="/ca-toronto-ko/brd/m_24644/list.do" >자주묻는질문(FAQ)</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5389/list.do" >여권</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5390/list.do" >비자</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5391/list.do" >공증</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5392/list.do" >병역</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5393/list.do" >가족관계등록</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5394/list.do" >국적</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_27012/list.do" >공동/금융 인증서</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_21301/list.do" >각종 증명서 발급</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5395/list.do" >재외국민등록</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_24767/list.do" >해외 이주 신고</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_24645/list.do" >순회영사</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5396/list.do" >양식 다운로드</a>
+							
+							</li>
+							</ul>
+						
+						</li>
+					
+					<li>
+						<a href="/ca-toronto-ko/brd/m_5397/list.do">뉴스</a>
+
+					
+						<ul class="dep2">
+							<li><a href="/ca-toronto-ko/brd/m_5397/list.do" >공지사항</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_21240/list.do" >문화 포커스</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_25433/list.do" >캐나다한국교육원</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5398/list.do" >한인단체 소식창</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_28930/list.do" >수출수주 알리미</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5405/list.do" >정치·경제·통상</a>
+							
+							</li>
+							</ul>
+						
+						</li>
+					
+					<li>
+						<a href="/ca-toronto-ko/brd/m_27271/list.do">정보마당</a>
+
+					
+						<ul class="dep2">
+							<li><a href="/ca-toronto-ko/brd/m_27271/list.do" >해외여행안전정보</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/wpge/m_28581/contents.do" >캐나다 및 관할지역 정보</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/wpge/m_28582/contents.do" >도착 전 준비사항</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/wpge/m_28583/contents.do" >현지 여행 정보</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/wpge/m_28584/contents.do" >현지 생활 정보</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5420/list.do" >워킹홀리데이</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5422/list.do" >동포단체 소개</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_5404/list.do" >지상사·무역단체 소개</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/wpge/m_28585/contents.do" >공공기관 홈페이지</a>
+							
+								<ol class="dep3">
+									<li><a href="https://www.kotra.or.kr/subList/20000005998/ovrssKbc/selectOvrssKbcDetail.do?deptCd=9312"  target="_blank" title="새창열림">토론토무역관(KOTRA)</a></li>
+								
+							
+								
+									<li><a href="http://english.visitkorea.or.kr/enu/KOO/KOO_EN_10_2.jsp"  target="_blank" title="새창열림">한국관광공사 토론토지사</a></li>
+								
+							
+								
+									<li><a href="https://www.komir.or.kr/kor/contents/27"  target="_blank" title="새창열림">한국광해광업공단 캐나다사무소</a></li>
+								
+							
+								
+									<li><a href="https://www.cakec.com/"  target="_blank" title="새창열림">캐나다 한국 교육원</a></li>
+								
+									</ol>
+								
+							
+							</li>
+							</ul>
+						
+						</li>
+					
+					<li>
+						<a href="/ca-toronto-ko/wpge/m_5415/contents.do">전자민원</a>
+
+					
+						<ul class="dep2">
+							<li><a href="/ca-toronto-ko/wpge/m_5415/contents.do" >질의/응답 답변안내</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="https://consul.mofa.go.kr/cipl/0100/login.do?authFailed=N"  target="_blank" title="새창열림">재외동포 365민원포털</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="https://www.mofa.go.kr/www/brd/m_4112/list.do"  target="_blank" title="새창열림">칭찬합시다</a>
+							
+							</li>
+							
+						
+						
+							<li><a href="/ca-toronto-ko/brd/m_28929/list.do" >기업지원헬프데스크</a>
+							
+							</li>
+							</ul>
+						
+						</li>
+					
+					<li class="top_link">
+						<button type="button">
+						<img src="/common-embd/images/common/icon_topmenu_3.png" alt="">
+						<span>캐나다 내 공관</span>
+					</li>
+				</ul>
+				<!-- gnb clone -->
+				<div class="sns">
+					<span>공관 소셜미디어</span>
+					<ul>
+						<li><a href="https://twitter.com/MofaToronto" target="_blank" title="새창"><img src="/common-embd/images/common/icon_twitter.png" alt="트위터"></a></li>
+						<li><a href="https://www.facebook.com/KoreanConsulate" target="_blank" title="새창"><img src="/common-embd/images/common/icon_facebook.png" alt="페이스북"></a></li>
+						<li><a href="https://www.instagram.com/mofatoronto" target="_blank" title="새창" ><img src="/common-embd/images/common/icon_insta.png" alt="instagram"></a></li>
+						<li><a href="https://www.youtube.com/channel/UCS2ooTpoco6vbkfjGfWl7wQ" target="_blank" title="새창" ><img src="/common-embd/images/common/icon_youtube.png" alt="youtube"></a></li>
+					</ul>
+
+				</div>
+				<button type="button" class="btn_sitemap_close"><span class="hide">사이트맵 닫기</span></button>
+			</div>
+		</div>
+	</div>
+	<!-- //헤더 -->
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+$('#kakaotalk').on("click", function(){
+	alert("onClick");
+});
+//-->
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 컨테이너 -->
+
+<div class="sub">
+  <div class="container">
+    <!-- 로컬내비게이션 -->
+    <div class="lnb">
+    	
+      <strong><span>영사 서비스</span></strong>
+      <ul>
+      	
+      	
+      	
+        	<li  >
+        		<a href="/ca-toronto-ko/brd/m_24644/list.do" >
+        			자주묻는질문(FAQ)
+        		</a>
+        		
+         	
+		 		
+        </li>
+				
+        	<li  >
+        		<a href="/ca-toronto-ko/brd/m_5389/list.do" >
+        			여권
+        		</a>
+        		
+         	
+		 		
+        </li>
+				
+        	<li  class="selected" >
+        		<a href="/ca-toronto-ko/brd/m_5390/list.do" >
+        			비자
+        		</a>
+        		
+         	
+		 		
+        </li>
+				
+        	<li  >
+        		<a href="/ca-toronto-ko/brd/m_5391/list.do" >
+        			공증
+        		</a>
+        		
+         	
+		 		
+        </li>
+				
+        	<li  >
+        		<a href="/ca-toronto-ko/brd/m_5392/list.do" >
+        			병역
+        		</a>
+        		
+         	
+		 		
+        </li>
+				
+        	<li  >
+        		<a href="/ca-toronto-ko/brd/m_5393/list.do" >
+        			가족관계등록
+        		</a>
+        		
+         	
+		 		
+        </li>
+				
+        	<li  >
+        		<a href="/ca-toronto-ko/brd/m_5394/list.do" >
+        			국적
+        		</a>
+        		
+         	
+		 		
+        </li>
+				
+        	<li  >
+        		<a href="/ca-toronto-ko/brd/m_27012/list.do" >
+        			공동/금융 인증서
+        		</a>
+        		
+         	
+		 		
+        </li>
+				
+        	<li  >
+        		<a href="/ca-toronto-ko/brd/m_21301/list.do" >
+        			각종 증명서 발급
+        		</a>
+        		
+         	
+		 		
+        </li>
+				
+        	<li  >
+        		<a href="/ca-toronto-ko/brd/m_5395/list.do" >
+        			재외국민등록
+        		</a>
+        		
+         	
+		 		
+        </li>
+				
+        	<li  >
+        		<a href="/ca-toronto-ko/brd/m_24767/list.do" >
+        			해외 이주 신고
+        		</a>
+        		
+         	
+		 		
+        </li>
+				
+        	<li  >
+        		<a href="/ca-toronto-ko/brd/m_24645/list.do" >
+        			순회영사
+        		</a>
+        		
+         	
+		 		
+        </li>
+				
+        	<li  >
+        		<a href="/ca-toronto-ko/brd/m_5396/list.do" >
+        			양식 다운로드
+        		</a>
+        		
+         	
+		 		
+        </li>
+				
+			</ul>
+		  <!-- 서브 탑영역 -->
+		  <div class="page_tit">
+		    <div>
+		      <h2>비자</h2>
+		      <ol>
+		        <li><a href="/ca-toronto-ko/index.do" title="홈으로 이동"><img src="/common-embd/images/common/icon_bc_home.png" alt=""></a></li>
+		        
+		        	 <li>영사 서비스</li>
+		         
+		        
+		        	
+		         <li>비자</li>
+		        
+		      </ol>
+		    </div>
+		    <ul>
+	    
+		    
+					
+			      <li class="fs_btn">
+			         <strong>글자크기</strong>
+			         <button type="button" class="fs_up"><span class="hide">글자확대</span></button>
+			         <button type="button" class="fs_down"><span class="hide">글자축소</span></button>
+			       </li>
+					
+					
+	     	
+	    
+		      <li class="share"><button type="button" title="sns목록 닫힘"><span class="hide">SNS 공유</span></button>
+		        <div>
+		          <a href="#facebook" onclick="sendSns('facebook','http://toronto.mofa.go.kr/ca-toronto-ko/brd/m_5390/list.do','[안내] 동포범위 확대에 따른 재외동포(F-4)비자 변경 내용  상세보기|비자 | 주토론토 대한민국 총영사관');return false;" target="_blank" title="페이스북"><img src="/common-embd/images/common/icon_sub_facebook.png" alt=""></a>
+		          <a href="#twitter" onclick="sendSns('twitter','http://toronto.mofa.go.kr/ca-toronto-ko/brd/m_5390/list.do','[안내] 동포범위 확대에 따른 재외동포(F-4)비자 변경 내용  상세보기|비자 | 주토론토 대한민국 총영사관');return false;" target="_blank" title="X(트위터)"><img src="/common-embd/images/common/icon_sub_twitter.png" alt=""></a>
+		          <!-- <a href="javascript:;" id ="kakaotalk"  target="_blank" title="카카오톡" class="only_mobile"><img src="/common-embd/images/common/icon_sub_kakao.png" alt=""></a> -->
+		          <a href="#" id="kakaotalk" >
+	            	<img src="/common-embd/images/common/icon_sub_kakao.png" alt="현재 페이지 카카오톡 공유하기">
+	            </a>
+		          <a href="#band" onclick="sendSns('band','http://toronto.mofa.go.kr/ca-toronto-ko/brd/m_5390/list.do','[안내] 동포범위 확대에 따른 재외동포(F-4)비자 변경 내용  상세보기|비자 | 주토론토 대한민국 총영사관');return false;" target="_blank" title="네이버 밴드" class="only_mobile"><img src="/common-embd/images/common/icon_sub_band.png" alt=""></a>
+		        </div>
+		      </li>
+		      <li class="print">
+		           <button type="button" onclick="contentPrint();"><span class="hide">인쇄하기</span></button>
+		      </li>
+		    </ul>
+		  </div>
+					 	<!-- depth-4 탭 버튼 -->
+				    
+							
+				     
+							
+				     
+							
+								
+				     	
+				     
+							
+				     
+							
+				     
+							
+				     
+							
+				     
+							
+				     
+							
+				     
+							
+				     
+							
+				     
+							
+				     
+							
+				     
+				     <!-- //depth-4 탭 버튼 -->
+		  
+		  
+		  <!-- //서브 탑영역 -->
+		</div>
+	<!-- //로컬내비게이션 -->
+
+	<div id="contents">
+		
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+function f_down(url){
+	$("#ajax_loading_bg").show();
+ 	
+	$('#_h_blank').attr('src',url);
+ 	
+ 	$('#_h_blank').ready(function(){
+ 		$("#ajax_loading_bg").hide();
+ 	});
+ 	
+}
+
+function fnSearchTag(val){//통합검색
+	  $("form[name=wise_sub] input[name=query]").val(val);
+	  $("form[name=wise_sub]").submit();
+	}
+//]]>
+//<![CDATA[
+  var today = new Date(); // 오늘 날짜    
+  var month = ""+today.getFullYear();
+  
+	if((today.getMonth()+1) < 10)
+		month += "0"+ (today.getMonth()+1);
+  else
+  	month += ""+ (today.getMonth()+1);
+         
+  function goView(brd_id,seq,data_tp,file_seq){
+		$.post("/*/brd/docviewer.do",{brd_id:brd_id, seq:seq, data_tp:data_tp, file_seq:file_seq}
+		,function(result){
+			if(result.outputValue == 0){
+				window.open("/viewer/skin/doc.html?fn="+result.filename+"&rs=/viewer/result/"+month,'_blank');
+				console.log(result);
+				win.focus();
+			}else {
+				console.log(result);
+				alert("문서파일 변환을 실패했습니다.");
+			}
+		});
+	}
+//]]>
+</script>
+<style type="text/css">
+.file_down>a {
+		margin-bottom: 5px
+	}
+.ajax_hide {display:none;}
+#ajax_loading_bg {position:fixed; overflow:hidden; top:0; left:0; height:100%; width:100%; background:#000000; opacity:0.7; /* IE 8 */ -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"; /* IE 5-7 */ filter:alpha(opacity=70); /* Netscape */ -moz-opacity:0.7; /* Safari 1.x */ -khtml-opacity:0.7; z-index:1000000001;}
+#ajax_loading_center {width:100px; height:100px; position:absolute; left:50%; top:50%;  margin-left:-50px; margin-top:-50px; z-index:1000000002;}
+</style>
+<div class="board_detail">
+	<div class="bo_head">
+		<h2>
+			
+			[안내] 동포범위 확대에 따른 재외동포(F-4)비자 변경 내용 
+		</h2>
+		<dl>
+			
+				<dt>작성자</dt>
+				<dd>주 토론토(총)</dd>
+				<dt scope="row">작성일</dt>
+				<dd>2019-09-05</dd><!-- 작성일 -->
+				<!--  게시글 수정일 추가 -->
+				 
+				<dt scope="row">수정일</dt>
+				<dd>2022-10-26</dd>
+				
+			
+		</dl>
+	</div>
+	
+	<div class="bo_file">
+		<strong>첨부</strong>
+			<ul>
+				
+				<li>
+					<a href="javascript:f_down('./down.do?brd_id=14363&amp;seq=1231159&amp;data_tp=A&amp;file_seq=3');">
+					
+						
+						<img src="/common-embd/images/common/icon_file_pdf.png" alt="개정 재외동포법 안내(2018.5.1).pdf 파일다운로드"/>
+						
+						
+					
+						<span>개정 재외동포법 안내(2018.5.1).pdf</span>
+					</a>
+					
+					<button type="button" onclick="goView('14363','1231159','A','3');" title="새창열림">미리보기</button>
+					
+				</li>
+				
+				<li>
+					<a href="javascript:f_down('./down.do?brd_id=14363&amp;seq=1231159&amp;data_tp=A&amp;file_seq=4');">
+					
+						
+						<img src="/common-embd/images/common/icon_file_pdf.png" alt="한국어 능력 및 해외범죄경력 제출 안내(2019.9.2).pdf 파일다운로드"/>
+						
+						
+					
+						<span>한국어 능력 및 해외범죄경력 제출 안내(2019.9.2).pdf</span>
+					</a>
+					
+					<button type="button" onclick="goView('14363','1231159','A','4');" title="새창열림">미리보기</button>
+					
+				</li>
+				
+			</ul>
+	</div>	
+	
+	<div class="bo_con">
+		<p dir="ltr" style="line-height:1.7999999999999998;margin-top:0pt;margin-bottom:0pt;"><span style="font-family: Calibri, sans-serif; font-size: 11pt; font-weight: 700; white-space: pre-wrap;">□ 주요내용</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">1. 「재외동포법 시행령」이 2019년 7월 2일 개정되어 4세대 이후 동포도 재외동포비자 (F-4)를 받을 수 있게 되었습니다.</span></p><p><b style="font-weight:normal;"><br/></b></p><p dir="ltr" style="line-height:1.7999999999999998;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">2. </span><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:underline;-webkit-text-decoration-skip:none;text-decoration-skip-ink:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">한국어능력 입증서류</span><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">​</span><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;"> 및 </span><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:underline;-webkit-text-decoration-skip:none;text-decoration-skip-ink:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">해외 범죄경력확인 서류</span><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;"> 제출 의무화</span></p><p><b style="font-weight:normal;"><br/></b></p><p dir="ltr" style="line-height:1.7999999999999998;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">-동포범위 확대에 따른 동포에 대한 인식개선, 한국사회 정착지원 등을 고려하여 재외동포 비자 신청 또는 체류자격 변경, 연장 시 한국어 능력 입증서류 및 해외 범죄경력서류를 제출하여햐 합니다.</span></p><p><b style="font-weight:normal;"><br/></b></p><p dir="ltr" style="line-height:1.7999999999999998;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">♣ 한국어능력 입증서류</span><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;"> (다음 서류 중 어느 하나)</span></p><p><b style="font-weight:normal;"><br/></b></p><p dir="ltr" style="line-height:1.7999999999999998;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">①사회통합프로그램 사전평가 결과 점수표(21점 이상)&nbsp;</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">②사회통합프로그램 교육확인서(1단계 이상 이수증)&nbsp;</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">③한국어능력시험(TOPIK) 1급 이상&nbsp;</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">④세종학당 초급 1B과정 이상수료증</span></p><p><b style="font-weight:normal;"><br/></b></p><p dir="ltr" style="line-height:1.7999999999999998;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">□ 한국어능력 면제대상</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">①과거 다른 체류자격에서 한국어능력 입증서류를 제출한 사실이 인정되는 사람</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">②과거 대한민국 국적 보유했던 사람</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">③60세 이상자 (2019기준 1959년생 생일이 지난 사람)</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">④한국에서 「초. 중등교육법」에 규정된 초등학교)초졸 검정고시 합격자), 「대안학교의 설립, 운영에 관한 규정」 제6조에 따라 초등학교 과정 학력인정을 받은 사람 포함) 이상 졸업자, 국내에서 고등학교를 졸업(정규학력인정 대안학교 포함)한 사람(제출서류: 졸업증명서)</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">⑤국내공인 국가지술자격증(기능사 이상)을 취득한 사람</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">⑥만기출국 후 제입국자(H-2-7)&nbsp;</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">⑦13세 이하인 사람(형사 미성년자)</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">⑧재외동포(F-4) 사증을 소지하고 국내에세 3년 이상 체류한 사람 등</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">&nbsp;&nbsp;&nbsp;※ 방문취업(H-2) ①②③④⑤ 재외동포(F-4) ①②③④⑥⑦에 해당하는 사람</span></p><p><b style="font-weight:normal;"><br/></b></p><p dir="ltr" style="line-height:1.7999999999999998;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">※한국어능력 입증서류 제출대상이&nbsp;</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">&nbsp;1) </span><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">제출한 경우</span><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">: 체류기간 2년의 복수사증발급</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">&nbsp;2) </span><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">제출하지 않은 경우</span><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">: 체류기간 1년이내의 복수사증 발급</span></p><p><b style="font-weight:normal;"><br/></b></p><p dir="ltr" style="line-height:1.7999999999999998;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">♣ 해외 범죄경력확인 서류 제출</span><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">: 만 18~59세 외국국적 동포 (18세 미만 혹은 60세 이상 제출면제)</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">-(</span><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#0075c8;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">지문이 포함된</span><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;"> 범죄경력증명 서류요건) 해당 국가의 권한있는 기관이 발급한 3개월 이내의 공적문서로 6개월 혹은 그 이상 체류한 국가의 모든 범죄경력이 포함되어야 함 *</span><span style="font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; vertical-align: baseline; white-space: pre-wrap;"><u>2021년9월에 기준 일부 변경(6개월 이내 발급/제3국에서 계속해서 1년이상 체류한 경우 제3국 범죄경력증명서 추가 제출 의무)</u></span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#ff0000;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">-캐나다 거주자는 범죄경력증명서(RCMP fingerprint based criminal record check)를 총영사관에서 영사확인을 받아 사증발급신청서 및 나머지 구비서류와 함께 제출</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">* 일시적으로 캐나다 범죄경력증명서는 영사확인을 거치지 않고도 접수가 가능합니다.</span></p><p><b style="font-weight:normal;"><br/></b></p><p dir="ltr" style="line-height:1.7999999999999998;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">□ 해외범죄경력 면제 대상</span><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;"> (아래 어느 하나에 해당하는 사람)</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">① 60세 이상자 (2021년 접수일 기준 만 60세 생일이 지난 사람)</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">② 13세 이하인 사람(형사 미성년자) 혹은 18세 미만 캐나다 국적을 가지고 있는 사람&nbsp;</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">③ 독립유공자 혹은 국가유공자와 그 유족</span></p><p dir="ltr" style="line-height: 1.8; margin-top: 0pt; margin-bottom: 0pt; margin-left: 40px;"><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;"><span style="color: rgb(68, 68, 68); font-size: 14.6667px; text-indent: -17.3333px; background-color: rgb(255, 255, 255);">독립유공자 혹은 국가유공자의 훈장ㆍ포장 또는 표창 원본 및 복사본 제출 + 가족관계증명서, </span></span><span style="background-color: rgb(255, 255, 255); color: rgb(68, 68, 68); font-family: Calibri, sans-serif; font-size: 14.6667px; text-indent: -17.3333px; white-space: pre-wrap;">제적등본</span><span style="background-color: rgb(255, 255, 255); color: rgb(68, 68, 68); font-size: 14.6667px; text-indent: -17.3333px; font-family: Calibri, sans-serif; white-space: pre-wrap;"> 등 가족관계증명 서류 제출</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">국적법 시행령 제6조 제1항 제1호 준용:</span></p><p dir="ltr" style="line-height:1.7999999999999998;text-indent: -11pt;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;padding:0pt 0pt 0pt 35.75pt;"><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#444444;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">1. 본인 또는 그 배우자나 직계존비속이 다음 각 목의 어느 하나에 해당하는 사람</span></p><p dir="ltr" style="line-height:1.7999999999999998;text-indent: -13pt;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;padding:0pt 0pt 0pt 49pt;"><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#444444;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">가. </span><a href="https://www.law.go.kr/LSW//lsLawLinkInfo.do?lsJoLnkSeq=1010493123&amp;chrClsCd=010202&amp;ancYnChk=0" style="text-decoration:none;"><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#1155cc;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:underline;-webkit-text-decoration-skip:none;text-decoration-skip-ink:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">「독립유공자예우에 관한 법률」</span></a><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#444444;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;"> </span><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#0000cd;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:underline;-webkit-text-decoration-skip:none;text-decoration-skip-ink:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">제4조</span><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#444444;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">에 따른 독립유공자</span></p><p dir="ltr" style="line-height:1.7999999999999998;text-indent: -13pt;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;padding:0pt 0pt 0pt 49pt;"><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#444444;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">나. </span><a href="https://www.law.go.kr/%EB%B2%95%EB%A0%B9/%EA%B5%AD%EA%B0%80%EC%9C%A0%EA%B3%B5%EC%9E%90%EB%93%B1%EC%98%88%EC%9A%B0%EB%B0%8F%EC%A7%80%EC%9B%90%EC%97%90%EA%B4%80%ED%95%9C%EB%B2%95%EB%A5%A0" style="text-decoration:none;"><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#1155cc;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:underline;-webkit-text-decoration-skip:none;text-decoration-skip-ink:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">「국가유공자 등 예우 및 지원에 관한 법률」</span></a><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#444444;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;"> </span><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#0000cd;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:underline;-webkit-text-decoration-skip:none;text-decoration-skip-ink:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">제4조</span><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#444444;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">에 따른 국가유공자로서 국가유공으로 관계 법률에 따라 대한민국 정부로부터 훈장ㆍ포장 또는 표창을 받은 사람</span></p><p dir="ltr" style="line-height:1.7999999999999998;text-indent: -13pt;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;padding:0pt 0pt 0pt 49pt;">&nbsp;</p><div dir="ltr" style="margin-left:0pt;" align="left"><table style="border:none;border-collapse:collapse;"><colgroup><col width="624"></colgroup><tbody><tr style="height:32.25pt"><td style="border-left:solid #dddddd 0.75pt;border-bottom:solid #dddddd 0.75pt;border-top:solid #dddddd 0.75pt;vertical-align:top;background-color:#f0f0f0;padding:2pt 0pt 2pt 0pt;overflow:hidden;overflow-wrap:break-word;"><p dir="ltr" style="line-height:1.7999999999999998;text-align: center;margin-top:0pt;margin-bottom:0pt;"><span style="font-size: 9pt; font-family: Calibri, sans-serif; color: rgb(68, 68, 68); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">독립유공자예우에 관한 법률</span></p><p dir="ltr" style="line-height:1.7999999999999998;text-align: center;margin-top:0pt;margin-bottom:0pt;"><span style="font-size: 9pt; font-family: Calibri, sans-serif; color: rgb(0, 117, 200); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">[시행 2019. 12. 10.] [법률 제16828호, 2019. 12. 10., 일부개정]</span></p></td></tr><tr style="height:143.25pt"><td style="border-left:solid #dddddd 0.75pt;border-top:solid #dddddd 0.75pt;vertical-align:top;background-color:#ffffff;overflow:hidden;overflow-wrap:break-word;"><div><span style="font-family: Calibri, sans-serif; color: rgb(68, 68, 68);"><span style="white-space: pre;"><br/></span></span></div><p dir="ltr" style="line-height:1.7999999999999998;margin-right: 8pt;text-indent: -11pt;margin-top:0pt;margin-bottom:11pt;padding:0pt 0pt 0pt 14.75pt;"><span style="font-size: 9pt; font-family: Calibri, sans-serif; color: rgb(21, 21, 148); background-color: transparent; font-weight: 700; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">제4조(적용 대상자)</span><span style="font-size: 9pt; font-family: Calibri, sans-serif; color: rgb(68, 68, 68); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"> 다음 각 호의 어느 하나에 해당하는 독립유공자, 그 유족 또는 가족은 이 법에 따른 예우를 받는다.</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-right: 8pt;text-indent: -11pt;margin-top:0pt;margin-bottom:11pt;padding:0pt 0pt 0pt 28.25pt;"><span style="font-size: 9pt; font-family: Calibri, sans-serif; color: rgb(68, 68, 68); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">1. 순국선열: 일제의 국권침탈(國權侵奪) 전후로부터 1945년 8월 14일까지 국내외에서 일제의 국권침탈을 반대하거나 독립운동을 위하여 일제에 항거하다가 그 반대나 항거로 인하여 순국한 자로서, 그 공로로 건국훈장(建國勳章)ㆍ건국포장(建國褒章) 또는 대통령 표창을 받은 자</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-right: 8pt;text-indent: -11pt;margin-top:0pt;margin-bottom:11pt;padding:0pt 0pt 0pt 28.25pt;"><span style="font-size: 9pt; font-family: Calibri, sans-serif; color: rgb(68, 68, 68); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">2. 애국지사: 일제의 국권침탈 전후로부터 1945년 8월 14일까지 국내외에서 일제의 국권침탈을 반대하거나 독립운동을 위하여 일제에 항거한 사실이 있는 자로서, 그 공로로 건국훈장ㆍ건국포장 또는 대통령 표창을 받은 자</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-right: 8pt;text-indent: -11pt;margin-top:0pt;margin-bottom:11pt;padding:0pt 0pt 0pt 14.75pt;"><span style="font-size: 9pt; font-family: Calibri, sans-serif; color: rgb(68, 68, 68); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">&nbsp;&nbsp;</span><span style="font-size: 9pt; font-family: Calibri, sans-serif; color: rgb(2, 79, 206); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">[전문개정 2008.3.28]</span></p></td></tr></tbody></table></div><p><br/></p><p><br/></p><div dir="ltr" style="margin-left:0pt;" align="left"><table style="border:none;border-collapse:collapse;"><colgroup><col width="624"></colgroup><tbody><tr style="height:18.533203125pt"><td style="border-left:solid #dddddd 0.75pt;border-bottom:solid #dddddd 0.75pt;border-top:solid #dddddd 0.75pt;vertical-align:top;background-color:#f0f0f0;padding:2pt 0pt 2pt 0pt;overflow:hidden;overflow-wrap:break-word;"><h2 dir="ltr" style="line-height:1.7999999999999998;text-align: center;margin-top:0pt;margin-bottom:0pt;"><span style="font-size: 9pt; font-family: Calibri, sans-serif; color: rgb(68, 68, 68); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">국가유공자 등 예우 및 지원에 관한 법률 ( 약칭: 국가유공자법 )</span></h2><h2 dir="ltr" style="line-height:1.7999999999999998;text-align: center;margin-top:0pt;margin-bottom:0pt;"><span style="font-size: 9pt; font-family: Calibri, sans-serif; color: rgb(0, 117, 200); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">[시행 2021. 4. 6.] [법률 제17883호, 2021. 1. 5., 타법개정]</span></h2></td></tr><tr style="height:1332pt"><td style="border-left:solid #dddddd 0.75pt;border-top:solid #dddddd 0.75pt;vertical-align:top;background-color:#ffffff;overflow:hidden;overflow-wrap:break-word;"><p dir="ltr" style="line-height:1.7999999999999998;margin-right: 8pt;text-indent: -10pt;margin-top:0pt;margin-bottom:11pt;padding:7.5pt 0pt 0pt 32.5pt;"><span style="font-size: 9pt; font-family: Calibri, sans-serif; color: rgb(21, 21, 148); background-color: transparent; font-weight: 700; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">제4조(적용 대상 국가유공자)</span><span style="font-size: 9pt; font-family: Calibri, sans-serif; color: rgb(68, 68, 68); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"> ① 다음 각 호의 어느 하나에 해당하는 국가유공자, 그 유족 또는 가족(다른 법률에서 이 법에 규정된 예우 등을 받도록 규정된 사람을 포함한다)은 이 법에 따른 예우를 받는다.&nbsp; </span><span style="font-size: 9pt; font-family: Calibri, sans-serif; color: rgb(2, 79, 206); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">&lt;개정 2015. 12. 22., 2020. 3. 24.&gt;</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-right: 8pt;text-indent: -11pt;margin-top:0pt;margin-bottom:11pt;padding:0pt 0pt 0pt 44.75pt;"><span style="font-size: 9pt; font-family: Calibri, sans-serif; color: rgb(68, 68, 68); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">1. 순국선열: 「독립유공자예우에 관한 법률」 제4조제1호에 따른 순국선열</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-right: 8pt;text-indent: -11pt;margin-top:0pt;margin-bottom:11pt;padding:0pt 0pt 0pt 44.75pt;"><span style="font-size: 9pt; font-family: Calibri, sans-serif; color: rgb(68, 68, 68); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">2. 애국지사: 「독립유공자예우에 관한 법률」 제4조제2호에 따른 애국지사</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-right: 8pt;text-indent: -11pt;margin-top:0pt;margin-bottom:11pt;padding:0pt 0pt 0pt 44.75pt;"><span style="font-size: 9pt; font-family: Calibri, sans-serif; color: rgb(68, 68, 68); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">3. 전몰군경(戰歿軍警): 군인이나 경찰공무원으로서 전투 또는 이에 준하는 직무수행 중 사망한 사람(군무원으로서 1959년 12월 31일 이전에 전투 또는 이에 준하는 직무수행 중 사망한 사람을 포함한다)</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-right: 8pt;text-indent: -11pt;margin-top:0pt;margin-bottom:11pt;padding:0pt 0pt 0pt 44.75pt;"><span style="font-size: 9pt; font-family: Calibri, sans-serif; color: rgb(68, 68, 68); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">4. 전상군경(戰傷軍警): 군인이나 경찰공무원으로서 전투 또는 이에 준하는 직무수행 중 상이를 입고 전역(퇴역ㆍ면역 또는 상근예비역 소집해제를 포함한다. 이하 같다)하거나 퇴직(면직을 포함한다. 이하 같다)한 사람(군무원으로서 1959년 12월 31일 이전에 전투 또는 이에 준하는 직무수행 중 상이를 입고 퇴직한 사람을 포함한다) 또는 6개월 이내에 전역이나 퇴직하는 사람으로서 그 상이정도가 국가보훈처장이 실시하는 신체검사에서 제6조의4에 따른 상이등급(이하 “상이등급”이라 한다)으로 판정된 사람</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-right: 8pt;text-indent: -11pt;margin-top:0pt;margin-bottom:11pt;padding:0pt 0pt 0pt 44.75pt;"><span style="font-size: 9pt; font-family: Calibri, sans-serif; color: rgb(68, 68, 68); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">5. 순직군경(殉職軍警): 군인이나 경찰ㆍ소방 공무원으로서 국가의 수호ㆍ안전보장 또는 국민의 생명ㆍ재산 보호와 직접적인 관련이 있는 직무수행이나 교육훈련 중 사망한 사람(질병으로 사망한 사람을 포함한다)</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-right: 8pt;text-indent: -11pt;margin-top:0pt;margin-bottom:11pt;padding:0pt 0pt 0pt 44.75pt;"><span style="font-size: 9pt; font-family: Calibri, sans-serif; color: rgb(68, 68, 68); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">6. 공상군경(公傷軍警): 군인이나 경찰ㆍ소방 공무원으로서 국가의 수호ㆍ안전보장 또는 국민의 생명ㆍ재산 보호와 직접적인 관련이 있는 직무수행이나 교육훈련 중 상이(질병을 포함한다)를 입고 전역하거나 퇴직한 사람 또는 6개월 이내에 전역이나 퇴직하는 사람으로서 그 상이정도가 국가보훈처장이 실시하는 신체검사에서 상이등급으로 판정된 사람</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-right: 8pt;text-indent: -11pt;margin-top:0pt;margin-bottom:11pt;padding:0pt 0pt 0pt 44.75pt;"><span style="font-size: 9pt; font-family: Calibri, sans-serif; color: rgb(68, 68, 68); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">7. 무공수훈자(武功受勳者): 무공훈장(武功勳章)을 받은 사람. 다만, 「국가공무원법」 제2조 및 「지방공무원법」 제2조에 따른 공무원과 국가나 지방자치단체에서 일상적으로 공무에 종사하는 대통령령으로 정하는 직원이 무공훈장을 받은 경우에는 전역하거나 퇴직한 사람만 해당한다.</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-right: 8pt;text-indent: -11pt;margin-top:0pt;margin-bottom:11pt;padding:0pt 0pt 0pt 44.75pt;"><span style="font-size: 9pt; font-family: Calibri, sans-serif; color: rgb(68, 68, 68); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">8. 보국수훈자(保國受勳者): 다음 각 목의 어느 하나에 해당하는 사람</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-right: 8pt;text-indent: -15pt;margin-top:0pt;margin-bottom:11pt;padding:0pt 0pt 0pt 60pt;"><span style="font-size: 9pt; font-family: Calibri, sans-serif; color: rgb(68, 68, 68); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">가. 군인으로서 보국훈장을 받고 전역한 사람</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-right: 8pt;text-indent: -15pt;margin-top:0pt;margin-bottom:11pt;padding:0pt 0pt 0pt 60pt;"><span style="font-size: 9pt; font-family: Calibri, sans-serif; color: rgb(68, 68, 68); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">나. 군인 외의 사람으로서 간첩체포, 무기개발 및 그 밖에 대통령령으로 정하는 사유(이하 “간첩체포등의 사유”라 한다)로 보국훈장을 받은 사람. 다만, 「국가공무원법」 제2조 및 「지방공무원법」 제2조에 따른 공무원(군인은 제외한다)과 국가나 지방자치단체에서 일상적으로 공무에 종사하는 대통령령으로 정하는 직원이 간첩체포등의 사유로 보국훈장을 받은 경우에는 퇴직한 사람만 해당한다.</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-right: 8pt;text-indent: -11pt;margin-top:0pt;margin-bottom:11pt;padding:0pt 0pt 0pt 44.75pt;"><span style="font-size: 9pt; font-family: Calibri, sans-serif; color: rgb(68, 68, 68); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">9. 6ㆍ25참전 재일학도의용군인(在日學徒義勇軍人)(이하 “재일학도의용군인”이라 한다): 대한민국 국민으로서 일본에 거주하던 사람으로서 1950년 6월 25일부터 1953년 7월 27일까지의 사이에 국군이나 유엔군에 지원 입대하여 6ㆍ25전쟁에 참전하고 제대한 사람(파면된 사람이나 형을 선고받고 제대된 사람은 제외한다)</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-right: 8pt;text-indent: -11pt;margin-top:0pt;margin-bottom:11pt;padding:0pt 0pt 0pt 44.75pt;"><span style="font-size: 9pt; font-family: Calibri, sans-serif; color: rgb(68, 68, 68); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">10. 참전유공자: 「참전유공자 예우 및 단체설립에 관한 법률」 제2조제2호에 해당하는 사람 중 다음 각 목의 어느 하나에 해당하는 사람</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-right: 8pt;text-indent: -15pt;margin-top:0pt;margin-bottom:11pt;padding:0pt 0pt 0pt 60pt;"><span style="font-size: 9pt; font-family: Calibri, sans-serif; color: rgb(68, 68, 68); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">가. 「참전유공자 예우 및 단체설립에 관한 법률」 제5조에 따라 등록된 사람</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-right: 8pt;text-indent: -15pt;margin-top:0pt;margin-bottom:11pt;padding:0pt 0pt 0pt 60pt;"><span style="font-size: 9pt; font-family: Calibri, sans-serif; color: rgb(68, 68, 68); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">나. 「고엽제후유의증 등 환자지원 및 단체설립에 관한 법률」 제4조 또는 제7조에 따라 등록된 사람</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-right: 8pt;text-indent: -11pt;margin-top:0pt;margin-bottom:11pt;padding:0pt 0pt 0pt 44.75pt;"><span style="font-size: 9pt; font-family: Calibri, sans-serif; color: rgb(68, 68, 68); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">11. 4ㆍ19혁명사망자: 1960년 4월 19일을 전후한 혁명에 참가하여 사망한 사람</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-right: 8pt;text-indent: -11pt;margin-top:0pt;margin-bottom:11pt;padding:0pt 0pt 0pt 44.75pt;"><span style="font-size: 9pt; font-family: Calibri, sans-serif; color: rgb(68, 68, 68); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">12. 4ㆍ19혁명부상자: 1960년 4월 19일을 전후한 혁명에 참가하여 상이를 입은 사람으로서 그 상이정도가 국가보훈처장이 실시하는 신체검사에서 상이등급으로 판정된 사람</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-right: 8pt;text-indent: -11pt;margin-top:0pt;margin-bottom:11pt;padding:0pt 0pt 0pt 44.75pt;"><span style="font-size: 9pt; font-family: Calibri, sans-serif; color: rgb(68, 68, 68); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">13. 4ㆍ19혁명공로자: 1960년 4월 19일을 전후한 혁명에 참가한 사람 중 제11호와 제12호에 해당하지 아니하는 사람으로서 건국포장(建國褒章)을 받은 사람</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-right: 8pt;text-indent: -11pt;margin-top:0pt;margin-bottom:11pt;padding:0pt 0pt 0pt 44.75pt;"><span style="font-size: 9pt; font-family: Calibri, sans-serif; color: rgb(68, 68, 68); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">14. 순직공무원: 「국가공무원법」 제2조 및 「지방공무원법」 제2조에 따른 공무원(군인과 경찰ㆍ소방 공무원은 제외한다)과 국가나 지방자치단체에서 일상적으로 공무에 종사하는 대통령령으로 정하는 직원으로서 국민의 생명ㆍ재산 보호와 직접적인 관련이 있는 직무수행이나 교육훈련 중 사망한 사람(질병으로 사망한 사람을 포함한다)</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-right: 8pt;text-indent: -11pt;margin-top:0pt;margin-bottom:11pt;padding:0pt 0pt 0pt 44.75pt;"><span style="font-size: 9pt; font-family: Calibri, sans-serif; color: rgb(68, 68, 68); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">15. 공상공무원: 「국가공무원법」 제2조 및 「지방공무원법」 제2조에 따른 공무원(군인과 경찰ㆍ소방 공무원은 제외한다)과 국가나 지방자치단체에서 일상적으로 공무에 종사하는 대통령령으로 정하는 직원으로서 국민의 생명ㆍ재산 보호와 직접적인 관련이 있는 직무수행이나 교육훈련 중 상이(질병을 포함한다)를 입고 퇴직하거나 6개월 이내에 퇴직하는 사람으로서 그 상이정도가 국가보훈처장이 실시하는 신체검사에서 상이등급으로 판정된 사람</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-right: 8pt;text-indent: -11pt;margin-top:0pt;margin-bottom:11pt;padding:0pt 0pt 0pt 44.75pt;"><span style="font-size: 9pt; font-family: Calibri, sans-serif; color: rgb(68, 68, 68); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">16. 국가사회발전 특별공로순직자(이하 “특별공로순직자”라 한다): 국가사회발전에 현저한 공이 있는 사람 중 그 공로와 관련되어 순직한 사람으로서 국무회의에서 이 법의 적용 대상자로 의결된 사람</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-right: 8pt;text-indent: -11pt;margin-top:0pt;margin-bottom:11pt;padding:0pt 0pt 0pt 44.75pt;"><span style="font-size: 9pt; font-family: Calibri, sans-serif; color: rgb(68, 68, 68); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">17. 국가사회발전 특별공로상이자(이하 “특별공로상이자”라 한다): 국가사회발전에 현저한 공이 있는 사람 중 그 공로와 관련되어 상이를 입은 사람으로서 그 상이정도가 국가보훈처장이 실시하는 신체검사에서 상이등급으로 판정되어 국무회의에서 이 법의 적용 대상자로 의결된 사람</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-right: 8pt;text-indent: -11pt;margin-top:0pt;margin-bottom:11pt;padding:0pt 0pt 0pt 44.75pt;"><span style="font-size: 9pt; font-family: Calibri, sans-serif; color: rgb(68, 68, 68); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">18. 국가사회발전 특별공로자(이하 “특별공로자”라 한다): 국가사회발전에 현저한 공이 있는 사람 중 제16호와 제17호에 해당하지 아니하는 사람으로서 국무회의에서 이 법의 적용 대상자로 의결된 사람</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-right: 8pt;text-indent: -1pt;margin-top:0pt;margin-bottom:11pt;padding:0pt 0pt 0pt 33.25pt;"><span style="font-size: 9pt; font-family: Calibri, sans-serif; color: rgb(68, 68, 68); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">② 제1항제3호부터 제6호까지, 제14호 및 제15호에 따른 국가유공자의 요건에 해당되는지에 대한 구체적인 기준과 범위는 다음 각 호의 사항 등을 종합적으로 고려하여 대통령령으로 정한다.</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-right: 8pt;text-indent: -11pt;margin-top:0pt;margin-bottom:11pt;padding:0pt 0pt 0pt 44.75pt;"><span style="font-size: 9pt; font-family: Calibri, sans-serif; color: rgb(68, 68, 68); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">1. 전투 또는 이에 준하는 직무수행의 범위</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-right: 8pt;text-indent: -11pt;margin-top:0pt;margin-bottom:11pt;padding:0pt 0pt 0pt 44.75pt;"><span style="font-size: 9pt; font-family: Calibri, sans-serif; color: rgb(68, 68, 68); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">2. 직무수행이나 교육훈련과 국가의 수호ㆍ안전보장 또는 국민의 생명ㆍ재산 보호와의 관련 정도</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-right: 8pt;text-indent: -11pt;margin-top:0pt;margin-bottom:11pt;padding:0pt 0pt 0pt 44.75pt;"><span style="font-size: 9pt; font-family: Calibri, sans-serif; color: rgb(68, 68, 68); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">3. 사망하거나 상이(질병을 포함한다)를 입게 된 경위 및 본인 과실의 유무와 정도</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-right: 8pt;text-indent: -1pt;margin-top:0pt;margin-bottom:11pt;padding:0pt 0pt 0pt 33.25pt;"><span style="font-size: 9pt; font-family: Calibri, sans-serif; color: rgb(68, 68, 68); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">③ 제1항에도 불구하고 제1항제1호 및 제2호에 따른 순국선열ㆍ애국지사의 예우에 관하여는 「독립유공자예우에 관한 법률」에서 정한다.</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-right: 8pt;text-indent: -1pt;margin-top:0pt;margin-bottom:11pt;padding:0pt 0pt 0pt 33.25pt;"><span style="font-size: 9pt; font-family: Calibri, sans-serif; color: rgb(68, 68, 68); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">④ 제1항에도 불구하고 제1항제10호가목에 해당하는 사람의 예우에 관하여는 「참전유공자 예우 및 단체설립에 관한 법률」에서 정한다.&nbsp; </span><span style="font-size: 9pt; font-family: Calibri, sans-serif; color: rgb(2, 79, 206); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">&lt;개정 2015. 12. 22.&gt;</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-right: 8pt;text-indent: -1pt;margin-top:0pt;margin-bottom:11pt;padding:0pt 0pt 0pt 33.25pt;"><span style="font-size: 9pt; font-family: Calibri, sans-serif; color: rgb(68, 68, 68); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">⑤ 제1항에도 불구하고 제1항제10호나목에 해당하는 사람의 지원에 관하여는 「고엽제후유의증 등 환자지원 및 단체설립에 관한 법률」에서 정한다.&nbsp; </span><span style="font-size: 9pt; font-family: Calibri, sans-serif; color: rgb(2, 79, 206); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">&lt;개정 2015. 12. 22.&gt;</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-right: 8pt;text-indent: -1pt;margin-top:0pt;margin-bottom:11pt;padding:0pt 0pt 0pt 33.25pt;"><span style="font-size: 9pt; font-family: Calibri, sans-serif; color: rgb(68, 68, 68); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">⑥ 제1항제3호부터 제6호까지, 제14호 또는 제15호에 따른 요건에 해당되는 사람이 다음 각 호의 어느 하나에 해당되는 원인으로 사망하거나 상이(질병을 포함한다)를 입으면 제1항 및 제6조에 따라 등록되는 국가유공자, 그 유족 또는 가족에서 제외한다.</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-right: 8pt;text-indent: -11pt;margin-top:0pt;margin-bottom:11pt;padding:0pt 0pt 0pt 44.75pt;"><span style="font-size: 9pt; font-family: Calibri, sans-serif; color: rgb(68, 68, 68); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">1. 불가피한 사유 없이 본인의 고의 또는 중대한 과실로 인한 것이거나 관련 법령 또는 소속 상관의 명령을 현저히 위반하여 발생한 경우</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-right: 8pt;text-indent: -11pt;margin-top:0pt;margin-bottom:11pt;padding:0pt 0pt 0pt 44.75pt;"><span style="font-size: 9pt; font-family: Calibri, sans-serif; color: rgb(68, 68, 68); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">2. 공무를 이탈한 상태에서의 사고나 재해로 인한 경우</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-right: 8pt;text-indent: -11pt;margin-top:0pt;margin-bottom:11pt;padding:0pt 0pt 0pt 44.75pt;"><span style="font-size: 9pt; font-family: Calibri, sans-serif; color: rgb(68, 68, 68); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">3. 장난ㆍ싸움 등 직무수행으로 볼 수 없는 사적(私的)인 행위가 원인이 된 경우</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-right: 8pt;text-indent: -1pt;margin-top:0pt;margin-bottom:11pt;padding:0pt 0pt 0pt 33.25pt;"><span style="font-size: 9pt; font-family: Calibri, sans-serif; color: rgb(2, 79, 206); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">[전문개정 2011. 9. 15.]</span></p></td></tr></tbody></table></div><p><span id="docs-internal-guid-c21e5ddb-7fff-b84f-5d98-dcd8490a41a9"><br/></span></p><p><br/></p><p><br/></p><p dir="ltr" style="line-height:1.7999999999999998;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">④ 특별공로(국익증진) 동포</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">⑤ 과거 본국 범죄경력증명서를 제출(생략 대상자 포함)하고 국내 체류하고 있는 사람으로서 해외에서 6개월 이상 연속하여 체류하지 않은 사람</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">⑥ 지침 시행일 이전 재외동포 (F-4)체류자격으로 체류하고 있는 동포로 체류기간연장을 신청하는 사람</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">&nbsp;&nbsp;※해외에서 6개월 이상 연속하여 체류한 경우에는 제출대상임</span></p><p dir="ltr" style="line-height:1.7999999999999998;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Calibri,sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">⑦ 만기출국 후 재입국자(H-2-7)</span></p><p><br/></p>
+	</div>
+	
+	<ul class="bo_util">
+     
+     
+   </ul>
+   
+   
+   <div class="bo_btn">
+     <a href="./list.do?page=1&amp;srchFr=&amp;srchTo=&amp;srchWord=&amp;srchTp=&amp;multi_itm_seq=0&amp;itm_seq_1=0&amp;itm_seq_2=0&amp;company_cd=&amp;company_nm=" class="blue">목록</a>
+   </div>
+   <nav class="bo_pagination">
+			<a href="#" class="prev"><b>이전 글</b>
+				<span>
+					
+					<!-- 이전글 없을 경우 -->
+					이전 글이 없습니다.
+				</span>
+			</a>
+			<a href="#" class="next"><b>다음 글</b>
+				<span>
+					 [중요] 방문 예약 안내
+					<!-- 다음글 없을 경우 -->
+					
+				</span>
+			</a>
+		</nav>
+</div>
+
+<div id="ajax_loading_bg" class="ajax_hide" >
+	<div id="ajax_loading_center"><img id="ajax_loading_img" src="/images/egovframework/cms/loading/ajax-loader.gif" alt="loading"/></div>
+</div>
+<iframe id="_h_blank" name="_h_blank" frameborder="0" height="0" width="0" title="내용없음"></iframe> 
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+	$(document).ready(function(){
+		getOpenAbroadList($('#cntt').val());
+		$("#cntt").append("<option value=''>:::대륙선택:::</option>");
+		$("#emblgbd").append("<option value=''>:::공관선택:::</option>");
+
+
+	});
+
+	//대륙코드선택 selectBox
+	function getOpenAbroadList(_cntt){
+		//재외공관한글명바로가기 abroadKo
+		if(_cntt != "")
+		$.post("/cmmn/abroadKoSelectBox.do",{cntt : _cntt},setOpenAbroadList, "json");
+	}
+
+	//공관선택 selectBox
+	function setOpenAbroadList(data, status){
+		if ( 'success' != status || null == data ) { alert("조회하지 못하였습니다."); return; }
+		var obj = $('select[name="emblgbd"]');
+		obj.children().remove();
+		$("#emblgbd").append("<option value=''>:::공관선택:::</option>");
+		if(data.vo.length == 9){
+		for(var i =0; i < data.vo.length; i++){
+			$("#cntt").append("<option value="+data.vo[i].code+">"+data.vo[i].description+"</option>");
+		}
+		}else {
+			for(var i =0; i < data.vo.length; i++){
+				$("#emblgbd").append("<option value="+data.vo[i].deptNm+">"+data.vo[i].description+"</option>");
+			}
+		}
+
+	}
+	//공관링크바로가기
+	function goabroad(url){
+		var chkurl="";
+		if(url != chkurl){window.open(url);	return;}
+	}
+//]]>
+</script>
+	
+			</div>
+		</div>
+	</div>
+	
+	<!-- 푸터 -->
+    <div class="footer">
+      <div class="addr">
+        <div class="container">
+          <dl>
+          
+          	<dt>주토론토 대한민국 총영사관</dt>
+						<dd class="add">주소 : 555 Avenue Road, Toronto, Ontario, Canada, M4V 2J7</dd>
+						<dd>대표전화 : 416-920-3809 <br />
+근무시간외 사건·사고 긴급/휴대전화 : 416-994-4490<br/>
+민원실 업무시간 : 09:00 ~ 12:00 / 13:00 ~ 16:30</dd>
+          
+<!-- 						<dt>주 토론토 대한민국 총영사관</dt> -->
+<!--             <dd class="add">주소 : 555 Avenue Road, Toronto, Ontario, Canada, M4V 2J7</dd> -->
+<!--             <dd>전화번호 : 416-920-3809 (근무시간외 사건·사고 긴급/휴대전화 : 416-994-4490) | 민원실 업무시간 : 오전 9:00 - 오후 4:30</dd> -->
+          </dl>
+          <nav class="fnb">
+	          
+<form name="form2" >
+	<div class="link">
+    	<div class="select">
+	      <select name="#" title="재외공관링크:대륙선택" id="cntt" name="cntt" onchange="javascript:getOpenAbroadList(this.value)"></select>
+    	</div>
+	    <div class="select">
+	      <select id="emblgbd" name="emblgbd" onchange="javascript:goabroad(this.value)" title="국가선택"></select>
+	    </div>
+  </div>
+</form>
+
+            
+		<ul>
+			<li><a href="http://www.mofa.go.kr/www/wpge/m_4194/contents.do" target="_blank" title="새창에서 열림">개인정보처리방침</a></li>
+			<li><a href="http://www.mofa.go.kr/www/wpge/m_4190/contents.do" target="_blank" title="새창에서 열림">저작권정책</a></li>
+			<li class="last"><a href="http://www.mofa.go.kr/www/wpge/m_4187/contents.do" target="_blank" title="새창에서 열림">뷰어프로그램</a></li>
+		</ul>
+
+            
+            <div class="view_mode ">
+              <span>텍스트 모드</span>
+              <a href="index.do?textMode=Y">
+               OFF
+              </a>
+            </div>
+          </nav>
+          
+	<div class="copy">
+	  <span>Copyright © Ministry of Foreign Affairs. All Rights Reserved.</span>
+	  <ol>
+	    <li><a href="https://www.facebook.com/mofakr.kr" target="_blank" title="새창"><img src="/common-embd/images/common/icon_facebook.png" alt="페이스북"></a></li>
+	    <li><a href="https://www.instagram.com/mofa_kr/" target="_blank" title="새창"><img src="/common-embd/images/common/icon_insta.png" alt="인스타그램"></a></li>
+	    <li><a href="https://www.youtube.com/user/MOFAKorea" target="_blank" title="새창"><img src="/common-embd/images/common/icon_youtube.png" alt="유튜브"></a></li>
+	  	<li><a href="https://twitter.com/mofa_kr" target="_blank" title="새창"><img src="/common-embd/images/common/icon_twitter.png" alt="트위터"></a></li>
+	  </ol>
+	</div>
+        </div>
+
+      </div>
+    </div>
+    <!-- //푸터 -->
+		
+
+<div class="modal_wrap">
+  <div class="modal_pop">
+<!--     <h2>팝업존</h2> -->
+    <div class="pop_banner">
+      <div class="slide"></div>
+      <div class="control">
+        <div class="pagination_num"></div>
+        <button class="prev">이전</button>
+        <button class="pause">자동재생 정지</button>
+        <button class="next">다음</button>
+      </div>
+    </div>
+    <div class="modal_close">
+     	
+     		 
+		      <button type="button" onclick="return closeWin('ca-toronto-ko')">일주일간 이 창 닫기</button>
+		      <button type="button" class="loop">팝업 닫기</button>
+				
+				
+     	
+
+    </div>
+  </div>
+
+</div>
+
+<div class="btn_quick" style="display:none">
+  <button type="button" class="modal_open_close"><span class="hide">팝업버튼 닫기</span></button>
+  <button type="button" class="modal_open">POPUP</button>
+  <button type="button" class="scroll_top"><img src="/common-embd/images/common/arrow_scrollup.png" alt="상단으로"></button>
+</div>
+
+<link rel="stylesheet" href="/common-embd/css/jquery-ui.min.css" />
+<script src="/common-embd/js/jquery-ui.min.js"></script>
+<script src="/common-embd/js/datepicker-ko.js"></script>
+
+<script type="text/javascript">
+
+$(function() {
+	 var totPop = 0;
+	selectWinOpenAjax('ca-toronto-ko');
+
+	//재외공간 윈도우 팝업존
+	function selectWinOpenAjax(id){
+		$.post("/cmmn/selectWinOpenAjax.do",{site_id : id},setWinOpenList, "json");
+	}
+
+	//재외공간 윈도우 팝업존
+	function setWinOpenList(data, status){
+
+		if ( 'success' != status || null == data ) { alert("조회하지 못하였습니다."); return; }
+		var obj = $('.modal_wrap .modal_pop .pop_banner .slide');
+		obj.children().remove();
+
+		for(var i =0; i < data.abwinopen.length; i++){
+			if ($('html').attr('lang') == 'ko') {
+				$(obj).append("<div class='box' tabindex='0'><div class='item'><div><div>"+data.abwinopen[i].ctnt+"</div></div></div><div class='layer'><span>전체보기</span></div></div>");
+			}else {
+				$(obj).append("<div class='box' tabindex='0'><div class='item'><div><div>"+data.abwinopen[i].ctnt+"</div></div></div><div class='layer'><span>View all</span></div></div>");
+			}
+		}
+		// 중동국가들에 대해서는 KTV 팝업이 나타나지 않도록 수정. - 행정관님 요청 / 2026.03.09.
+		/* for(var i =0; i < data.winopen.length; i++){
+			if ($('html').attr('lang') == 'ko') {
+				$(obj).append("<div class='box' tabindex='0'><div class='item'><div><div>"+data.winopen[i].ctnt+"</div></div></div><div class='layer'><span>전체보기</span></div></div>");
+			}else {
+				$(obj).append("<div class='box' tabindex='0'><div class='item'><div><div>"+data.winopen[i].ctnt+"</div></div></div><div class='layer'><span>View all</span></div></div>");
+			}
+		} */
+		if( 'ca-toronto-ko'.includes('ae-') ||
+				'ca-toronto-ko'.includes('bh-') ||
+				'ca-toronto-ko'.includes('il-') ||
+				'ca-toronto-ko'.includes('iq-') ||
+				'ca-toronto-ko'.includes('ir-') ||
+				'ca-toronto-ko'.includes('sa-') ||
+				'ca-toronto-ko'.includes('jo-') ||
+				'ca-toronto-ko'.includes('kw-') ||
+				'ca-toronto-ko'.includes('lb-') ||
+				'ca-toronto-ko'.includes('ps-') ||
+				'ca-toronto-ko'.includes('qa-') ||
+				'ca-toronto-ko'.includes('om-') ||
+				'ca-toronto-ko'.includes('ye-') ){
+			for(var i =0; i < data.winopen.length; i++){
+				if(!data.winopen[i].ctnt.includes('ktv') && !data.winopen[i].ctnt.includes('KTV')){
+					if ($('html').attr('lang') == 'ko') {
+						$(obj).append("<div class='box' tabindex='0'><div class='item'><div><div>"+data.winopen[i].ctnt+"</div></div></div><div class='layer'><span>전체보기</span></div></div>");
+					}else {
+						$(obj).append("<div class='box' tabindex='0'><div class='item'><div><div>"+data.winopen[i].ctnt+"</div></div></div><div class='layer'><span>View all</span></div></div>");
+					}
+				}	//end if - i > 0			
+			}
+		}else{
+			for(var i =0; i < data.winopen.length; i++){
+				if ($('html').attr('lang') == 'ko') {
+					$(obj).append("<div class='box' tabindex='0'><div class='item'><div><div>"+data.winopen[i].ctnt+"</div></div></div><div class='layer'><span>전체보기</span></div></div>");
+				}else {
+					$(obj).append("<div class='box' tabindex='0'><div class='item'><div><div>"+data.winopen[i].ctnt+"</div></div></div><div class='layer'><span>View all</span></div></div>");
+				}
+			}
+		}
+		
+		
+		var cnt = data.winopen.length+data.abwinopen.length;
+		
+		$("#openCnt").text(cnt);
+		var windowWidth = $(window).width();
+		if (windowWidth < 1079){
+			if(cnt > 0){
+				$(".btn_quick").show();
+			}
+		} 
+		
+		//팝업 슬라이드
+		  var popSlide = $(".pop_banner .slide");
+		  
+		  popSlide.on(
+		    "init reInit afterChange",
+		    function (event, slick, currentSlide, nextSlide) {
+		      var i = (currentSlide ? currentSlide : 0) + 1;
+		      $(".pop_banner .pagination_num").html(
+		        '<span class="current">' + i + "</span> / " + slick.slideCount
+		      );
+		      
+		    }
+		  );
+		  popSlide.slick({
+		    autoplay: true,
+		    cssEase: "ease-in",
+		    dots: false,
+		    rows:1,
+		    slidesPerRow: 1,
+		    slidesToShow:1,
+		    mobileFirst: true,
+		    swipeToSlide: true,    
+		    prevArrow: $(".pop_banner .prev"), //arrow 설정
+		    nextArrow: $(".pop_banner .next"), //arrow 설정
+		    responsive: [
+		      {
+		        //반응형
+		        breakpoint: 720,
+		        settings: {
+		          rows:2,
+		          slidesPerRow: 2,
+		          slidesToShow:1,
+		        },
+		      },      
+		    ],     
+		  });
+		  $(".pop_banner .pause").click(function () {
+		    if ($(this).hasClass("play")) {
+		      $(this).removeClass("play").text("자동재생 정지");
+		      popSlide.slick("slickPlay");
+		    } else {
+		      $(this).addClass("play").text("자동재생 시작");
+		      popSlide.slick("slickPause");
+		    }
+		  });
+		  $(document).on('click', '.pop_banner .slide .box', function (event) {
+			    if ($('html').attr('lang') == 'ko') {
+			      $(event.target).closest('.box').find('.item').clone().addClass('pop').appendTo('#wrapper').children().append('<button type="button">접기<span class="wave1"></span><span class="wave2"></span><span class="wave3"></span></button>');
+			    } else {
+			      $(event.target).closest('.box').find('.item').clone().addClass('pop').appendTo('#wrapper').children().append('<button type="button">Fold<span class="wave1"></span><span class="wave2"></span><span class="wave3"></span></button>');
+			    }
+			  });
+		  $(document).on('click','.item.pop button',function(){
+		    $('.item.pop').remove();
+		  });
+		  
+		  totPop = data.winopen.length+data.abwinopen.length ;
+		  
+		  if(totPop > 0 ){
+			  
+			  
+		  $('.modal_open').on('click',function(){//모달팝업 오픈
+			  	openPopup();
+			    popSlide.slick('setPosition');//슬라이드 리셋
+			    imgResize();
+			  });
+		  
+		  }
+	}
+	
+
+	if ( getCookie( "modal_wrap_ca-toronto-ko" ) != "done" && totPop > 0 ) {
+		openPopup();
+	}else {
+		$(".modal_wrap").css("display","none");
+	}
+
+
+	$(".close-poplayer").on("click",function(e){
+		e.preventDefault();
+		$(this).parent().parent().fadeOut(300);
+	});
+	
+	
+});
+
+function getCookie( name ){
+	var nameOfCookie = name + "=";
+
+	var x = 0;
+	while ( x <= document.cookie.length )
+	{
+		var y = (x+nameOfCookie.length);
+		if ( document.cookie.substring( x, y ) == nameOfCookie ) {
+			if ( (endOfCookie=document.cookie.indexOf( ";", y )) == -1 )
+				endOfCookie = document.cookie.length;
+			return unescape( document.cookie.substring( y, endOfCookie ) );
+		}
+		x = document.cookie.indexOf( " ", x ) + 1;
+		if ( x == 0 )
+			break;
+	}
+	return "";
+}
+
+function setCookie( name, value, expiredays ) {
+	var todayDate = new Date();
+	todayDate.setDate( todayDate.getDate() + expiredays );
+	document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+}
+
+function closeWin(name) {
+	setCookie( "modal_wrap_ca-toronto-ko", "done" , 7);
+	$(".modal_wrap_ca-toronto-ko").fadeOut(300);
+
+}
+
+
+</script>
+<!-- //팝업존 -->
+<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+
+<script type ="text/javascript">
+
+var k_url =window.location.href;
+
+Kakao.init('1eb73651f9041197c35a858272a868f6');
+$('a#kakaotalk').on('click', function(){
+		//<![CDATA[
+			Kakao.Link.sendDefault({
+			        objectType: 'feed',
+			        content: {
+			          title: '[안내] 동포범위 확대에 따른 재외동포(F-4)비자 변경 내용  상세보기|비자 | 주토론토 대한민국 총영사관',
+			          imageUrl: '',
+			          link: {
+			            mobileWebUrl: k_url,
+			            webUrl:  k_url
+			          }
+			        },
+			        buttons: [
+			          {
+			            title: '홈페이지로이동',
+			            link: {
+			            mobileWebUrl: k_url,
+		   	            webUrl:  k_url
+			            }
+			          }
+			        ]
+			    });
+			 //]]>
+			 return false;
+       
+});
+</script>
+	</div>
+</body>
+</html>
+<script type="text/javascript" src="/js/weblog/mofa-ca-toronto-ko.js" ></script>
+<noscript><img src="http://log.mofa.go.kr/tracker.1.tsp?u=1084&js=N" width="0" height="0" alt=""/></noscript>

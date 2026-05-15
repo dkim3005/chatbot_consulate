@@ -1,0 +1,6 @@
+.env
+__pycache__/
+*.pyc
+logs/
+data/embeddings_cache.npy
+data/embeddings_ids.json
