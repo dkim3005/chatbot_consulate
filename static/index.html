@@ -90,6 +90,18 @@
       display: block;
     }
 
+    .header-home {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+    }
+    .header-home:hover .emblem {
+      box-shadow: 0 0 0 3px rgba(255,255,255,0.5), 0 2px 8px rgba(0,0,0,0.3);
+    }
+
     .header-title h1 {
       font-size: 17px;
       font-weight: 700;
@@ -568,14 +580,16 @@
 <!-- 메인 헤더 -->
 <header>
   <div class="header-inner">
-    <div class="emblem" aria-hidden="true">
-      <img src="/kor_logo.svg" alt="" />
-    </div>
+    <a href="/" class="header-home" title="처음으로">
+      <div class="emblem" aria-hidden="true">
+        <img src="/kor_logo.svg" alt="" />
+      </div>
 
-    <div class="header-title">
-      <h1>주토론토 대한민국 총영사관</h1>
-      <div class="sub">Consulate General of the Republic of Korea in Toronto</div>
-    </div>
+      <div class="header-title">
+        <h1>주토론토 대한민국 총영사관</h1>
+        <div class="sub">Consulate General of the Republic of Korea in Toronto</div>
+      </div>
+    </a>
 
     <div class="header-badge">🤖 AI 민원 안내</div>
   </div>
